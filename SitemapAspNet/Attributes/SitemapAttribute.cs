@@ -128,7 +128,7 @@ namespace SitemapAspNet.Attributes
                 throw new ArgumentOutOfRangeException("priority", priority, "Priority must be between 0.0 and 1.0.");
             }
 
-            if (!_IsValidDate(lastModification))
+            if ((lastModification != null) && !_IsValidDate(lastModification))
             {
                 throw new ArgumentException("The date isn't in the W3C format.", "lastModification");
             }
@@ -138,8 +138,12 @@ namespace SitemapAspNet.Attributes
                 _changeFrequently = changeFrequently.ToString().ToLowerInvariant();
             }
 
+            if (!priority.Equals(0.5))
+            {
+                _priority = priority.ToString(CultureInfo.InvariantCulture);
+            }
+
             _lastModification = lastModification;
-            _priority = priority.ToString(CultureInfo.InvariantCulture);
         }
 
         /// <summary>
@@ -227,7 +231,7 @@ namespace SitemapAspNet.Attributes
         /// <returns></returns>
         private static bool _IsValidPriority(double priority)
         {
-            return (priority < 0.0) && (1.0 > priority);
+            return (0.0 < priority) && (priority < 1.0);
         }
 
         #endregion Méthodes.
