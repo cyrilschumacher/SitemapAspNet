@@ -1,6 +1,6 @@
 ﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
-using System.Resources;
 using System.Runtime.InteropServices;
 
 // Conformité CLS.
@@ -28,4 +28,10 @@ using System.Runtime.InteropServices;
 // Version principale, Version secondaire, Numéro de build, Révision
 [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: NeutralResourcesLanguageAttribute("fr-fr")]
+
+// Suppression des messages de l'analyse Microsoft.
+[assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "SitemapAspNet.Configurations")]
+[assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap", Scope = "namespace", Target = "SitemapAspNet.Configurations")]
+[assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap", Scope = "namespace", Target = "SitemapAspNet.Models")]
+[assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
+[assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap", Scope = "namespace", Target = "SitemapAspNet.Attributes")]

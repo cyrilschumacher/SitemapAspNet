@@ -123,12 +123,12 @@ namespace SitemapAspNet.Attributes
         [SuppressMessage("Microsoft.Globalization", "CA1308:NormalizeStringsToUppercase")]
         public SitemapAttribute(string lastModification, Frequence changeFrequently, double priority)
         {
-            if ((priority < 0.0) && (1.0 > priority))
+            if (!_IsValidPriority(priority))
             {
                 throw new ArgumentOutOfRangeException("priority", priority, "Priority must be between 0.0 and 1.0.");
             }
 
-            if (!IsValidDate(lastModification))
+            if (!_IsValidDate(lastModification))
             {
                 throw new ArgumentException("The date isn't in the W3C format.", "lastModification");
             }
@@ -209,14 +209,25 @@ namespace SitemapAspNet.Attributes
         ///     Determines if the date is W3C format.
         /// </summary>
         /// <param name="lastModification">Date of last modification file.</param>
-        /// <exception cref="FormatException">Throw if <paramref name="lastModification" /> isn't in the W3C format.</exception>
-        private static bool IsValidDate(string lastModification)
+        /// <returns>True if the date is valid, False else.</returns>
+        private static bool _IsValidDate(string lastModification)
         {
             var supportedFormats = new[] { "yyyy-MM-dd", "YYYY-MM-DDThh:mmTZD", "YYYY-MM-DDThh:mm:ssTZD", "YYYY-MM-DDThh:mm:ss.sTZD" };
 
             DateTime result;
             return DateTime.TryParseExact(lastModification, supportedFormats, CultureInfo.InvariantCulture,
                 DateTimeStyles.None, out result);
+        }
+
+        /// <summary>
+        ///     Determines if the priority is between 0.0 and 1.0.
+        /// </summary>
+        /// <param name="priority">Priority.</param>
+        /// <returns>True if the priority is valid, False else.</returns>
+        /// <returns></returns>
+        private static bool _IsValidPriority(double priority)
+        {
+            return (priority < 0.0) && (1.0 > priority);
         }
 
         #endregion Méthodes.

@@ -54,7 +54,6 @@
     <Compile Include="Extensions\ICustomAttributeProviderExtensions.cs" />
     <Compile Include="Extensions\UriExtensions.cs" />
     <Compile Include="Extensions\XmlSerializerExtensions.cs" />
-    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\EntryModel.cs" />
     <Compile Include="Models\SitemapModel.cs" />
     <Compile Include="Models\UrlSetModel.cs" />
