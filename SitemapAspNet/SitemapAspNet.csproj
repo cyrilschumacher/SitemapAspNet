@@ -65,7 +65,6 @@
     <Compile Include="SitemapService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
     <None Include="SitemapAspNet.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Xml.Serialization;
 
 namespace SitemapAspNet.Models
@@ -15,6 +16,8 @@ namespace SitemapAspNet.Models
         ///     Représente des entrées URL.
         /// </summary>
         [XmlElement("url")]
+        [SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly"),
+         SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
         public List<EntryModel> Url { get; set; }
 
         /// <summary>

@@ -1,9 +1,9 @@
-﻿using System;
+﻿using SitemapAspNet.Builders;
+using SitemapAspNet.Extensions;
+using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Web.Mvc;
 using System.Web.Routing;
-using SitemapAspNet.Builders;
-using SitemapAspNet.Extensions;
 
 namespace SitemapAspNet.Controllers
 {
@@ -16,9 +16,18 @@ namespace SitemapAspNet.Controllers
     [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
     public class SitemapController : Controller
     {
-        #region Méthodes.
+        #region Methods.
 
-        #region Privées.
+        /// <summary>
+        ///     Return the sitemap.
+        /// </summary>
+        /// <returns>XML content.</returns>
+        public ActionResult Index()
+        {
+            return _GenerateSitemap(new SitemapService(Request.RequestContext, RouteTable.Routes));
+        }
+
+        #region Privates.
 
         /// <summary>
         ///     Generate a sitemap.
@@ -31,17 +40,8 @@ namespace SitemapAspNet.Controllers
                 Request.RequestContext.HttpContext.Request.Url.GetHostNameWithProtocol());
         }
 
-        #endregion
+        #endregion Privates.
 
-        /// <summary>
-        ///     Return the sitemap.
-        /// </summary>
-        /// <returns>XML content.</returns>
-        public ActionResult Index()
-        {
-            return _GenerateSitemap(new SitemapService(Request.RequestContext, RouteTable.Routes));
-        }
-
-        #endregion
+        #endregion Methods.
     }
 }

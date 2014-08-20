@@ -1,5 +1,4 @@
 # Sitemap Generator for ASP.NET # 
----
 Librairie de génération de plan de site pour un site web ASP.NET.
 
 ## Configuration requise ##

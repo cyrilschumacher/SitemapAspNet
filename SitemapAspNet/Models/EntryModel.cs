@@ -4,33 +4,37 @@ using System.Xml.Serialization;
 namespace SitemapAspNet.Models
 {
     /// <summary>
-    ///     Représente une entrée URL.
+    ///     Entry URL.
     /// </summary>
     [CLSCompliant(true)]
     [XmlRoot("url")]
     public class EntryModel
     {
         /// <summary>
-        ///     Obtient ou définit une adresse.
+        ///     Get or set a Uri address.
         /// </summary>
+        /// <value>Uri address.</value>
         [XmlElement("loc")]
         public string Address { get; set; }
 
         /// <summary>
-        ///     Obtient ou définit une date de modification.
+        ///     Get or set a last date modification.
         /// </summary>
+        /// <value>Last date modification.</value>
         [XmlElement("lastmod")]
         public string LastModification { get; set; }
 
         /// <summary>
-        ///     Obtient ou définit une fréquence de changement.
+        ///     Get or set a frequency.
         /// </summary>
+        /// <value>Frequency.</value>
         [XmlElement("changefreq")]
         public string ChangeFrequently { get; set; }
 
         /// <summary>
-        ///     Obtient ou définit une priorité.
+        ///     Get or set a priority.
         /// </summary>
+        /// <value>Priority.</value>
         [XmlElement("priority")]
         public string Priority { get; set; }
     }

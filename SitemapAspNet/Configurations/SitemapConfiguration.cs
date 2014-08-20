@@ -14,7 +14,7 @@ namespace SitemapAspNet.Configurations
     [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
     public static class SitemapConfiguration
     {
-        #region Constantes.
+        #region Constants.
 
         /// <summary>
         ///     Default route name.
@@ -26,9 +26,9 @@ namespace SitemapAspNet.Configurations
         /// </summary>
         private const string UrlPattern = "sitemap";
 
-        #endregion Constantes.
+        #endregion Constants.
 
-        #region Méthodes.
+        #region Methods.
 
         /// <summary>
         ///     Set a URL route.
@@ -62,6 +62,8 @@ namespace SitemapAspNet.Configurations
             _Register(routes, RouteName, urlPattern, new { controller = "Sitemap" });
         }
 
+        #region Privates.
+
         /// <summary>
         ///     Set a URL route.
         /// </summary>
@@ -74,6 +76,8 @@ namespace SitemapAspNet.Configurations
             routes.MapRoute(routeName, urlPattern, defaultRouteValues);
         }
 
-        #endregion Méthodes.
+        #endregion Privates.
+
+        #endregion Methods.
     }
 }

@@ -5,23 +5,28 @@ using SitemapAspNet.Attributes;
 namespace SitemapAspNet.Builders
 {
     /// <summary>
-    ///     Interface pour un monteur de plan de site.
+    ///     Interface for sitemap builder.
     /// </summary>
     /// <author>Cyril Schumacher</author>
     /// <date>09/08/2014T13:18:32+01:00</date>
     internal interface ISitemapBuilder
     {
         /// <summary>
-        ///     Créer une entrée URL.
+        ///     Create a URL entry.
         /// </summary>
-        /// <param name="page">Information de la page.</param>
-        /// <param name="rootUri">Adresse absolue de l'application.</param>
+        /// <param name="page">URL entry informations.</param>
+        /// <param name="rootUri">Uri address of application.</param>
         void CreateEntry(SitemapAttribute page, Uri rootUri);
 
         /// <summary>
-        ///     Génére un plan de site.
+        ///     Generate a sitemap.
         /// </summary>
-        /// <param name="encoding">Encodage.</param>
-        string Generate(Encoding encoding = null);
+        string Generate();
+
+        /// <summary>
+        ///     Generate a sitemap.
+        /// </summary>
+        /// <param name="encoding">Encoding.</param>
+        string Generate(Encoding encoding);
     }
 }

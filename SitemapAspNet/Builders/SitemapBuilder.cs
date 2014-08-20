@@ -7,49 +7,46 @@ using System.Text;
 namespace SitemapAspNet.Builders
 {
     /// <summary>
-    ///     Monteur de plan de site.
+    ///     Sitemap builder.
     /// </summary>
-    /// <copyright file="/Builders/SitemapBuilder.cs">
-    ///     Copyright (c) 2014 Cyril Schumacher.fr All Rights Reserved
-    /// </copyright>
     /// <author>Cyril Schumacher</author>
     /// <date>09/08/2014T13:18:14+01:00</date>
     internal class SitemapBuilder : ISitemapBuilder
     {
-        #region Membres.
+        #region Fields.
 
         /// <summary>
         ///     Model.
         /// </summary>
         private readonly UrlSetModel _model;
 
-        #endregion Membres.
+        #endregion Fields.
 
-        #region Constructeur.
+        #region Constructor.
 
         /// <summary>
-        ///     Constructeur.
+        ///     Constructor.
         /// </summary>
         public SitemapBuilder()
         {
             _model = new UrlSetModel();
         }
 
-        #endregion Constructeur.
+        #endregion Constructor.
 
-        #region Méthodes.
+        #region Methods.
 
         /// <summary>
-        ///     Créer une entrée URL.
+        ///     Create a URL entry.
         /// </summary>
-        /// <param name="page">Information de la page.</param>
-        /// <param name="rootUri">Adresse absolue de l'application.</param>
-        /// <exception cref="ArgumentNullException">Se lève si <paramref name="page" /> a la valeur null.</exception>
-        /// <exception cref="ArgumentNullException">Se lève si <paramref name="rootUri" /> a la valeur null.</exception>
+        /// <param name="page">URL entry informations.</param>
+        /// <param name="rootUri">Uri address of application.</param>
+        /// <exception cref="ArgumentNullException">Throw if <paramref name="page" /> is null.</exception>
+        /// <exception cref="ArgumentNullException">Throw if <paramref name="rootUri" /> is null.</exception>
         public void CreateEntry(SitemapAttribute page, Uri rootUri)
         {
-            if (page == null) throw new ArgumentNullException("page");
-            if (rootUri == null) throw new ArgumentNullException("rootUri");
+            if (page == null) throw new ArgumentNullException("page", "The parameter is null.");
+            if (rootUri == null) throw new ArgumentNullException("rootUri", "The parameter is null.");
 
             _model.Url.Add(new EntryModel
             {
@@ -61,14 +58,25 @@ namespace SitemapAspNet.Builders
         }
 
         /// <summary>
-        ///     Génére un plan de site.
+        ///     Generate a sitemap.
         /// </summary>
-        /// <param name="encoding">Encodage.</param>
-        public string Generate(Encoding encoding = null)
+        /// <seealso cref="Generate(Encoding)"/>
+        public string Generate()
         {
-            return XmlSerializerExtensions.SerializeToString(_model, encoding ?? Encoding.UTF8);
+            return Generate(Encoding.UTF8);
         }
 
-        #endregion Méthodes.
+        /// <summary>
+        ///     Generate a sitemap.
+        /// </summary>
+        /// <param name="encoding">Encoding.</param>
+        /// <exception cref="ArgumentNullException">Throw if <paramref name="encoding" /> is null.</exception>
+        public string Generate(Encoding encoding)
+        {
+            if (encoding == null) throw new ArgumentNullException("encoding", "The parameter is null.");
+            return XmlSerializerExtensions.SerializeToString(_model, encoding);
+        }
+
+        #endregion Methods.
     }
 }
