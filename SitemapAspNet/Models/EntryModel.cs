@@ -10,6 +10,8 @@ namespace SitemapAspNet.Models
     [XmlRoot("url")]
     public class EntryModel
     {
+        #region Properties.
+
         /// <summary>
         ///     Get or set a Uri address.
         /// </summary>
@@ -37,5 +39,7 @@ namespace SitemapAspNet.Models
         /// <value>Priority.</value>
         [XmlElement("priority")]
         public string Priority { get; set; }
+
+        #endregion Properties.
     }
 }

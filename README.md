@@ -3,7 +3,8 @@ Librairie de génération de plan de site pour un site web ASP.NET.
 
 ## Configuration requise ##
 
-> .NET Framework 4.0
+- Microsoft .NET Framework 4.0
+- Application ASP.NET MVC
 
 ## Exemple ##
 

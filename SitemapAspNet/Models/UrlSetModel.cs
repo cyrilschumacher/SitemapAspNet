@@ -12,6 +12,8 @@ namespace SitemapAspNet.Models
     [XmlRoot("urlset", Namespace = "http://www.sitemaps.org/schemas/sitemap/0.9")]
     public class UrlSetModel
     {
+        #region Properties.
+
         /// <summary>
         ///     Représente des entrées URL.
         /// </summary>
@@ -20,6 +22,10 @@ namespace SitemapAspNet.Models
          SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
         public List<EntryModel> Url { get; set; }
 
+        #endregion Properties.
+
+        #region Constructor.
+
         /// <summary>
         ///     Constructeur.
         /// </summary>
@@ -27,5 +33,7 @@ namespace SitemapAspNet.Models
         {
             Url = new List<EntryModel>();
         }
+
+        #endregion Constructor.
     }
 }

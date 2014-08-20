@@ -11,6 +11,8 @@ namespace SitemapAspNet.Models
     [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
     public class SitemapModel
     {
+        #region Properties.
+
         /// <summary>
         ///     Get or set a controller name.
         /// </summary>
@@ -29,5 +31,7 @@ namespace SitemapAspNet.Models
         /// <value><see cref="SitemapAttribute" /> attribute.</value>
         [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
         public SitemapAttribute Sitemap { get; set; }
+
+        #endregion Properties.
     }
 }
