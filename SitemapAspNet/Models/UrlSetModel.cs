@@ -6,7 +6,7 @@ using System.Xml.Serialization;
 namespace SitemapAspNet.Models
 {
     /// <summary>
-    ///     Représente un plan de site.
+    ///     References the current protocol standard.
     /// </summary>
     [CLSCompliant(true)]
     [XmlRoot("urlset", Namespace = "http://www.sitemaps.org/schemas/sitemap/0.9")]
@@ -15,8 +15,9 @@ namespace SitemapAspNet.Models
         #region Properties.
 
         /// <summary>
-        ///     Représente des entrées URL.
+        ///     Get or set a <see cref="EntryModel"/> list.
         /// </summary>
+        /// <value><see cref="EntryModel"/> list.</value>
         [XmlElement("url")]
         [SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly"),
          SuppressMessage("Microsoft.Design", "CA1002:DoNotExposeGenericLists")]
@@ -27,7 +28,7 @@ namespace SitemapAspNet.Models
         #region Constructor.
 
         /// <summary>
-        ///     Constructeur.
+        ///     Constructor.
         /// </summary>
         public UrlSetModel()
         {

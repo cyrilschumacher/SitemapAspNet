@@ -1,18 +1,17 @@
-# Sitemap Generator for ASP.NET # 
-Librairie de génération de plan de site pour un site web ASP.NET.
+# Sitemap Generator for ASP.NET
+Library for generating Sitemap for a ASP.NET website.
 
-## Configuration requise ##
+## Requirement
 
-- Microsoft .NET Framework 4.0
-- Application ASP.NET MVC
+- Microsoft .NET Framework 4.0 or higher.
+- Application ASP.NET MVC 4 or higher.
 
-## Exemple ##
+## Example
 
-### Configuration ###
-
-Pour que la librairie génére un plan de site, celle-ci requiert les itinéraires d'URL de l'application. Pour cela, une classe **SitemapConfiguration** propose une méthode statique **Register** demandant les itinéraires. 
-
-Voici un exemple d'utilisation :
+### Configuration
+-
+To generate a site map, the library must be configured by providing the **RouteTable**. A **SitemapConfiguration** class provides a static method **Register**.
+An example of use :
 
 	public class MvcApplication : HttpApplication
 	{
@@ -23,7 +22,7 @@ Voici un exemple d'utilisation :
 		}
 	}
 
-### Utilisation ###
+### How to use
 
 Après avoir configuré la librairie, il est possible d'utiliser l'attribut **SitemapAttribute** demandant des renseignements sur l'adresse.
 
@@ -31,9 +30,17 @@ Voici un exemple d'utilisation :
 
 	public class CustomController : Controller
 	{
+		// Create a URL entry with a modification date, frequency and priority.
 		[Sitemap("2014-08-20", SitemapAttribute.Frequence.Monthly, 0.7D)]
-		public ViewResult Index()
-		{
-			return View();
-		}
+        public ViewResult Index()
+        {
+            return View();
+        }
+
+		// Create a URL entry with only a modification date.
+        [Sitemap("2014-08-19")]
+        public ActionResult Contact()
+        {
+            return View();
+        }
 	}

@@ -19,16 +19,16 @@ namespace SitemapAspNet
     /// <date>15/02/2014T18:28:54+01:00</date>
     internal sealed class SitemapService
     {
-        #region Constantes.
+        #region Constants.
 
         /// <summary>
-        ///     Préfix des contrôleurs.
+        ///     Default Controller prefix.
         /// </summary>
         private const string ControllerPrefix = "Controller";
 
-        #endregion Constantes.
+        #endregion Constants.
 
-        #region Membres.
+        #region Fields.
 
         /// <summary>
         ///     HTTP request informations.
@@ -45,9 +45,9 @@ namespace SitemapAspNet
         /// </summary>
         private string _controllerPrefix;
 
-        #endregion Membres.
+        #endregion Fields.
 
-        #region Constructeur.
+        #region Constructor.
 
         /// <summary>
         ///     Constructor.
@@ -71,53 +71,24 @@ namespace SitemapAspNet
             _routes = routes;
         }
 
-        #endregion Constructeur.
+        #endregion Constructor.
 
-        #region Méthodes.
-
-        #region Privées.
+        #region Methods.
 
         /// <summary>
-        ///     Retourne l'adresse de la page.
+        ///     Génére un plan de site selon des ensembles d'attribut <see cref="SitemapAttribute" />
         /// </summary>
-        /// <param name="controllerName">Nom du contrôleur.</param>
-        /// <param name="actionName">Nom de l'action.</param>
-        /// <returns>Adresse Uri de la page.</returns>
-        private string _GetPageAddress(string controllerName, string actionName)
+        /// <param name="builder">Monteur de plan de site.</param>
+        /// <param name="rootUri">Adresse Uri du serveur.</param>
+        /// <returns>Chaîne de caractère représentant un document XML valide.</returns>
+        /// <exception cref="ArgumentNullException">
+        ///     Se lève si <paramref name="builder" /> ou <paramref name="rootUri" /> a la
+        ///     valeur null.
+        /// </exception>
+        public ContentResult Generate(ISitemapBuilder builder, Uri rootUri)
         {
-            var path = _routes.GetVirtualPath(_requestContext,
-                new RouteValueDictionary(
-                    new { controller = controllerName.Replace(_controllerPrefix, string.Empty), action = actionName }));
-            return (path != null) ? path.VirtualPath : null;
+            return Generate(builder, rootUri, ControllerPrefix);
         }
-
-        /// <summary>
-        ///     Retournes les pages.
-        /// </summary>
-        /// <returns>Pages.</returns>
-        private IEnumerable<SitemapAttribute> _GetPages()
-        {
-            return from page in _GetControllersType()
-                   where (page.Sitemap != null)
-                   select
-                       new SitemapAttribute(page.Sitemap.LastModification, page.Sitemap.ChangeFrequently,
-                           page.Sitemap.Priority) { Address = _GetPageAddress(page.ControllerName, page.ActionName) };
-        }
-
-        /// <summary>
-        ///     Retourne les informations des pages représentant des <see cref="Controller" />.
-        /// </summary>
-        /// <returns>Informations des pages.</returns>
-        private static IEnumerable<SitemapModel> _GetControllersType()
-        {
-            // Obtient les contrôleurs selon un ensemble d'assembly représentant l'application.
-            var application = new ApplicationResearcher(AppDomain.CurrentDomain.GetAssemblies()).Search();
-            var controllers = new TypeResearcher(application).Search(typeof(Controller));
-
-            return new SitemapEngine(controllers).GetPages();
-        }
-
-        #endregion Privées.
 
         /// <summary>
         ///     Génére un plan de site selon des ensembles d'attribut <see cref="SitemapAttribute" />
@@ -126,14 +97,26 @@ namespace SitemapAspNet
         /// <param name="rootUri">Adresse Uri du serveur.</param>
         /// <param name="controllerPrefix">Préfixe des contrôleurs.</param>
         /// <returns>Chaîne de caractère représentant un document XML valide.</returns>
-        /// <exception cref="ArgumentNullException">Se lève si <paramref name="builder"/> ou <paramref name="rootUri"/> a la valeur null.</exception>
-        public ContentResult Generate(ISitemapBuilder builder, Uri rootUri, string controllerPrefix = ControllerPrefix)
+        /// <exception cref="ArgumentNullException">
+        ///     Se lève si <paramref name="builder" /> ou <paramref name="rootUri" /> a la
+        ///     valeur null.
+        /// </exception>
+        public ContentResult Generate(ISitemapBuilder builder, Uri rootUri, string controllerPrefix)
         {
-            if (builder == null) throw new ArgumentNullException("builder", "The parameter is null.");
-            if (rootUri == null) throw new ArgumentNullException("rootUri", "The parameter is null.");
+            if (builder == null)
+            {
+                throw new ArgumentNullException("builder", "The parameter is null.");
+            }
+            if (rootUri == null)
+            {
+                throw new ArgumentNullException("rootUri", "The parameter is null.");
+            }
 
             _controllerPrefix = controllerPrefix;
-            foreach (var page in _GetPages()) builder.CreateEntry(page, rootUri);
+            foreach (var page in _GetPages())
+            {
+                builder.CreateEntry(page, rootUri);
+            }
 
             return new ContentResult
             {
@@ -143,6 +126,47 @@ namespace SitemapAspNet
             };
         }
 
-        #endregion Méthodes.
+        #region Privates.
+
+        /// <summary>
+        ///     Return page address.
+        /// </summary>
+        /// <param name="controllerName">Controller name.</param>
+        /// <param name="actionName">Action name.</param>
+        /// <returns>Page address.</returns>
+        private string _GetPageAddress(string controllerName, string actionName)
+        {
+            var path = _routes.GetVirtualPath(_requestContext,
+                new RouteValueDictionary(
+                    new {controller = controllerName.Replace(_controllerPrefix, string.Empty), action = actionName}));
+            return (path != null) ? path.VirtualPath : null;
+        }
+
+        /// <summary>
+        ///     Return pages.
+        /// </summary>
+        /// <returns>Pages.</returns>
+        private IEnumerable<SitemapAttribute> _GetPages()
+        {
+            return from page in _GetControllersType()
+                where (page.Sitemap != null)
+                select
+                    new SitemapAttribute(page.Sitemap.LastModification, page.Sitemap.ChangeFrequently,
+                        page.Sitemap.Priority) {Address = _GetPageAddress(page.ControllerName, page.ActionName)};
+        }
+
+        /// <summary>
+        ///     Return pages informations of <see cref="Controller" />.
+        /// </summary>
+        /// <returns>Pages informations.</returns>
+        private static IEnumerable<SitemapModel> _GetControllersType()
+        {
+            var application = new ApplicationResearcher(AppDomain.CurrentDomain.GetAssemblies()).Search();
+            return new SitemapEngine(new TypeResearcher(application).Search(typeof (Controller))).GetPages();
+        }
+
+        #endregion Privates.
+
+        #endregion Methods.
     }
 }
