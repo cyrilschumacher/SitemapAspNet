@@ -1,5 +1,5 @@
-# Sitemap Generator for ASP.NET
-Library for generating Sitemap for a ASP.NET website.
+# Sitemap Generator for ASP.NET MVC
+Library for generating Sitemap for a ASP.NET MVC website.
 
 ## Requirement
 
@@ -9,7 +9,6 @@ Library for generating Sitemap for a ASP.NET website.
 ## Example
 
 ### Configuration
--
 To generate a site map, the library must be configured by providing the **RouteTable**. A **SitemapConfiguration** class provides a static method **Register**.
 An example of use :
 
@@ -23,7 +22,6 @@ An example of use :
 	}
 
 ### How to use
-
 Après avoir configuré la librairie, il est possible d'utiliser l'attribut **SitemapAttribute** demandant des renseignements sur l'adresse.
 
 Voici un exemple d'utilisation :
