@@ -49,7 +49,7 @@
   <ItemGroup>
     <Compile Include="Attributes\SitemapAttribute.cs" />
     <Compile Include="Builders\ISitemapBuilder.cs" />
-    <Compile Include="Builders\SitemapBuilder.cs" />
+    <Compile Include="Builders\XmlSitemapBuilder.cs" />
     <Compile Include="Configurations\SitemapConfiguration.cs" />
     <Compile Include="Controllers\SitemapController.cs" />
     <Compile Include="Extensions\ICustomAttributeProviderExtensions.cs" />
