@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>SitemapAspNet</id>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <title>Sitemap for ASP.NET</title>
     <authors>Cyril Schumacher</authors>
     <projectUrl>https://github.com/cyrilschumacher/SitemapAspNet</projectUrl>
