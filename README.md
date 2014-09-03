@@ -1,6 +1,5 @@
-# Sitemap Generator for ASP.NET
-Library for generating Sitemap for a ASP.NET website.
-Available on [Nuget](https://www.nuget.org/packages/SitemapAspNet/).
+# Sitemap Generator for ASP.NET MVC
+Library for generating Sitemap for a ASP.NET MVC website. Available on [Nuget](https://www.nuget.org/packages/SitemapAspNet/).
 
 ## Requirement
 
