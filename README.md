@@ -1,10 +1,17 @@
 # Sitemap Generator for ASP.NET MVC
+
+## Description
+
 Library for generating Sitemap for a ASP.NET MVC website. Available on [Nuget](https://www.nuget.org/packages/SitemapAspNet/).
 
 ## Requirement
 
 - Microsoft .NET Framework 4.0 or higher.
 - Application ASP.NET MVC 4 or higher.
+
+## Documentation
+
+A documentation is available [here](http://cyrilschumacher.github.io/SitemapAspNet/).
 
 ## Example
 
@@ -22,9 +29,9 @@ An example of use :
 	}
 
 ### How to use
-Après avoir configuré la librairie, il est possible d'utiliser l'attribut **SitemapAttribute** demandant des renseignements sur l'adresse.
 
-Voici un exemple d'utilisation :
+After configuring the library, it's possible to use **SitemapAttribute** attribute for to include a Web page.
+An example of use :
 
 	public class CustomController : Controller
 	{
