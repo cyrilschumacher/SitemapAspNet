@@ -26,8 +26,8 @@ using System.Runtime.InteropServices;
 
 // Les informations de version pour un assembly se composent des quatre valeurs suivantes :
 // Version principale, Version secondaire, Numéro de build, Révision
-[assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("1.2.*")]
+[assembly: AssemblyFileVersion("1.2.0.0")]
 
 // Suppression des messages de l'analyse Microsoft.
 [assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "SitemapAspNet.Configurations")]
