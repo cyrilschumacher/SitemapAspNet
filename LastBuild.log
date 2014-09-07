@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="2014.5.31.0" projectFile="C:\Users\Cyril\Desktop\SitemapAspNet.shfbproj" started="21/08/2014 20:46:22">
+<shfbBuild product="Sandcastle Help File Builder" version="2014.5.31.0" projectFile="C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\SitemapAspNet.shfbproj" started="07/09/2014 19:42:17">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
 Locating components in the following folder(s):
-   C:\Users\Cyril\Desktop
+   C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals
 Using presentation style &#39;VS2013&#39; located in &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
 Loading and initializing plug-ins...
 Lightweight Website Style Version 2014.5.31.0
 Copyright &#169; 2006-2014, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
 </buildStep>
-<buildStep step="ClearWorkFolder">
-Clearing working folder...
-</buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
-Source: C:\Users\Cyril\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.dll
-    Found assembly &#39;C:\Users\Cyril\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.dll&#39;
-Source: C:\Users\Cyril\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.XML
+Source: C:\Users\Cyril\Source\Repos\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.dll
+    Found assembly &#39;C:\Users\Cyril\Source\Repos\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.dll&#39;
+Source: C:\Users\Cyril\Source\Repos\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.xml
 
 Copying XML comments files
-    C:\Users\Cyril\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.XML -&gt; C:\Users\Cyril\Desktop\Help\Working\SitemapAspNet.XML
+    C:\Users\Cyril\Source\Repos\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.XML -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\SitemapAspNet.XML
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, Anglais (&#201;tats-Unis))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.0090
+</plugIn>    Last step completed in 00:00:00.0060
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
@@ -35,8 +32,8 @@ Generating API filter for MRefBuilder...
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-La g‚n‚ration a d‚marr‚ 21/08/2014 20:46:24.
-Projet &quot;C:\Users\Cyril\Desktop\Help\Working\GenerateRefInfo.proj&quot; sur le noud 1 (cibles par d‚faut).
+La g‚n‚ration a d‚marr‚ 07/09/2014 19:42:18.
+Projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\GenerateRefInfo.proj&quot; sur le noud 1 (cibles par d‚faut).
 PrepareForBuild:
   Cr‚ation du r‚pertoire &quot;obj\Debug\&quot;.
 GenerateRefInfo:
@@ -44,29 +41,29 @@ GenerateRefInfo:
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
   Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 5 namespaces, 10 types, and 35 members
+  Wrote information on 6 namespaces, 11 types, and 41 members
   Copie du fichier de &quot;reflection.org&quot; vers &quot;reflection.all&quot;.
   XslTransform (v2014.5.31.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
-G‚n‚ration du projet &quot;C:\Users\Cyril\Desktop\Help\Working\GenerateRefInfo.proj&quot; termin‚e (cibles par d‚faut).
+G‚n‚ration du projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\GenerateRefInfo.proj&quot; termin‚e (cibles par d‚faut).
 
 La g‚n‚ration a r‚ussi.
 
-Temps ‚coul‚ 00:00:02.29
-    Last step completed in 00:00:02.7572
+Temps ‚coul‚ 00:00:01.25
+    Last step completed in 00:00:01.3851
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-La g‚n‚ration a d‚marr‚ 21/08/2014 20:46:27.
-Projet &quot;C:\Users\Cyril\Desktop\Help\Working\TransformManifest.proj&quot; sur le noud 1 (cibles par d‚faut).
+La g‚n‚ration a d‚marr‚ 07/09/2014 19:42:19.
+Projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\TransformManifest.proj&quot; sur le noud 1 (cibles par d‚faut).
 TransformManifest:
   XslTransform (v2014.5.31.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
-  Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
   Copie du fichier de &quot;reflection.xml&quot; vers &quot;reflection.nofilenames&quot;.
   XslTransform (v2014.5.31.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
@@ -76,21 +73,21 @@ TransformManifest:
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
-G‚n‚ration du projet &quot;C:\Users\Cyril\Desktop\Help\Working\TransformManifest.proj&quot; termin‚e (cibles par d‚faut).
+G‚n‚ration du projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\TransformManifest.proj&quot; termin‚e (cibles par d‚faut).
 
 La g‚n‚ration a r‚ussi.
 
-Temps ‚coul‚ 00:00:01.43
-    Last step completed in 00:00:01.9041
+Temps ‚coul‚ 00:00:00.61
+    Last step completed in 00:00:00.7492
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.0190
+    Last step completed in 00:00:00.0200
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 No additional content to copy
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
@@ -99,65 +96,57 @@ Merging conceptual and additional tables of contents...
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-La g‚n‚ration a d‚marr‚ 21/08/2014 20:46:29.
-Projet &quot;C:\Users\Cyril\Desktop\Help\Working\GenerateIntermediateTOC.proj&quot; sur le noud 1 (cibles par d‚faut).
+La g‚n‚ration a d‚marr‚ 07/09/2014 19:42:20.
+Projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\GenerateIntermediateTOC.proj&quot; sur le noud 1 (cibles par d‚faut).
 GenerateIntermediateTOC:
   XslTransform (v2014.5.31.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
-  Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\CreateVSToc.xsl&#39;.
-G‚n‚ration du projet &quot;C:\Users\Cyril\Desktop\Help\Working\GenerateIntermediateTOC.proj&quot; termin‚e (cibles par d‚faut).
+  Applying XSL transformation &#39;D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+G‚n‚ration du projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\GenerateIntermediateTOC.proj&quot; termin‚e (cibles par d‚faut).
 
 La g‚n‚ration a r‚ussi.
 
-Temps ‚coul‚ 00:00:00.95
+Temps ‚coul‚ 00:00:00.14
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:01.4031
+    Last step completed in 00:00:00.2680
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00.1800
+    Last step completed in 00:00:00.2070
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
-C:\Users\Cyril\Desktop\Help\Working\sandcastle.config
-    Last step completed in 00:00:00.0330
+C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0400
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe]
-La g‚n‚ration a d‚marr‚ 21/08/2014 20:46:31.
-Projet &quot;C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj&quot; sur le noud 1 (cibles par d‚faut).
+La g‚n‚ration a d‚marr‚ 07/09/2014 19:42:20.
+Projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\BuildReferenceTopics.proj&quot; sur le noud 1 (cibles par d‚faut).
 BuildReferenceTopics:
   BuildAssembler (v2014.5.31.0)
   Copyright &#184; 2006-2014, Microsoft Corporation, All Rights Reserved.
   Portions Copyright &#184; 2006-2014, Eric Woodruff, All Rights Reserved.
   Loading configuration...
-  ResolveReferenceLinksComponent: The MSDN content ID cache &#39;C:\Users\Cyril\AppData\Local\EWSoftware\Sandcastle Help File Builder\Cache\MsdnContentId.cache&#39; does not exist yet.  All IDs will be looked up in this build which will slow it down.
   Processing topics...
-BuildAssembler : warning : ShowMissingComponent: [N:SitemapAspNet.Attributes] Missing &lt;summary&gt; documentation [C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [N:SitemapAspNet.Configurations] Missing &lt;summary&gt; documentation [C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [N:SitemapAspNet.Controllers] Missing &lt;summary&gt; documentation [C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [N:SitemapAspNet.Extensions] Missing &lt;summary&gt; documentation [C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [N:SitemapAspNet.Models] Missing &lt;summary&gt; documentation [C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj]
-  Processed 60 topic(s)
-  5 warning(s)
+  Processed 73 topic(s)
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 6 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 2 of 30.
-  ResolveReferenceLinksComponent: New MSDN content ID cache size: 147 entries
-G‚n‚ration du projet &quot;C:\Users\Cyril\Desktop\Help\Working\BuildReferenceTopics.proj&quot; termin‚e (cibles par d‚faut).
+G‚n‚ration du projet &quot;C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\BuildReferenceTopics.proj&quot; termin‚e (cibles par d‚faut).
 
 La g‚n‚ration a r‚ussi.
 
-Temps ‚coul‚ 00:01:31.94
-    Last step completed in 00:01:32.4267
+Temps ‚coul‚ 00:00:08.98
+    Last step completed in 00:00:09.1305
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
 
 Clearing any prior web output
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0930
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -168,118 +157,119 @@ E-Mail: Eric@EWoodruff.us
 
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
-Processing website files in C:\Users\Cyril\Desktop\Help\Working\Output\Website
-Processed 60 HTML files
+Processing website files in C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website
+Processed 73 HTML files
 Sorting keywords and generating See Also indices
-Saving website keyword index to C:\Users\Cyril\Desktop\Help\Working\WebKI.xml
-Saving website table of contents to C:\Users\Cyril\Desktop\Help\Working\WebTOC.xml
-    Last step completed in 00:00:01.5371
+Saving website keyword index to C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\WebKI.xml
+Saving website table of contents to C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\WebTOC.xml
+    Last step completed in 00:00:00.4090
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\AlertCaution.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\AlertNote.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\AlertSecurity.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\CFW.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\CodeExample.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\favicon.ico
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privclass.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privdelegate.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privenumeration.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privevent.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privextension.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privfield.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privinterface.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privmethod.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privproperty.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\privstructure.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protclass.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protdelegate.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protenumeration.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protevent.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protextension.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protfield.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protinterface.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protmethod.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protoperator.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protproperty.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\protstructure.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubclass.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubdelegate.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubenumeration.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubevent.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubextension.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubfield.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubinterface.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubmethod.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\puboperator.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubproperty.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\pubstructure.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\SectionCollapsed.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\SectionExpanded.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\slMobile.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\static.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\xna.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\scripts\branding.js
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-cs-CZ.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-de-DE.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-en-US.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-es-ES.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-fr-FR.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-Help1.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help2.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-Help2.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-HelpViewer.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-it-IT.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-ja-JP.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-ko-KR.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-pl-PL.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-pt-BR.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-ru-RU.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-tr-TR.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-Website.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-zh-CN.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding-zh-TW.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\styles\branding.css
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\index.html
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\search.html
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\SearchHelp.aspx
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\SearchHelp.inc.php
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\SearchHelp.php
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\Web.Config
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\Search.png
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\TocClose.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\TocCollapsed.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\TocExpanded.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\icons\TocOpen.gif
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\scripts\branding-Website.js
-D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\Cyril\Desktop\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00.2030
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\AlertCaution.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\AlertNote.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\AlertSecurity.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\CFW.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\CodeExample.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\favicon.ico
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privclass.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privdelegate.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privenumeration.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privevent.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privextension.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privfield.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privinterface.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privmethod.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privproperty.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\privstructure.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protclass.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protdelegate.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protenumeration.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protevent.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protextension.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protfield.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protinterface.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protmethod.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protoperator.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protproperty.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\protstructure.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubclass.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubdelegate.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubenumeration.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubevent.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubextension.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubfield.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubinterface.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubmethod.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\puboperator.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubproperty.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\pubstructure.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\SectionCollapsed.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\SectionExpanded.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\slMobile.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\static.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\xna.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\scripts\branding.js
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-cs-CZ.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-de-DE.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-en-US.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-es-ES.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-fr-FR.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-Help1.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help2.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-Help2.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-HelpViewer.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-it-IT.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-ja-JP.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-ko-KR.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-pl-PL.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-pt-BR.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-ru-RU.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-tr-TR.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-Website.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-zh-CN.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding-zh-TW.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\styles\branding.css
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\index.html
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\search.html
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\SearchHelp.aspx
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\SearchHelp.inc.php
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\SearchHelp.php
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\Web.Config
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\Search.png
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\TocClose.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\TocCollapsed.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\TocExpanded.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\icons\TocOpen.gif
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\scripts\branding-Website.js
+D:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\Users\Cyril\Source\Repos\SitemapAspNet\Additionals\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.2900
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00.0030
+    Last step completed in 00:00:00.0020
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:00.6380
+</plugIn>    Last step completed in 00:00:00.7920
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
 
 Copied 100 files
-Copied 187 files for the website content
-    Last step completed in 00:00:00.2450
+Copied 200 files
+Copied 208 files for the website content
+    Last step completed in 00:00:00.3080
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.0540
+    Last step completed in 00:00:00.0880
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 08/21/2014 08:48 .  Total time: 00:01:43,6344
+Build completed successfully at 09/07/2014 07:42 .  Total time: 00:00:14,2460
 
 </buildStep>
 </shfbBuild>

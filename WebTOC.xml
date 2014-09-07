@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HelpTOC>
 
-  <HelpTOCNode Id="60131ef8-2711-4ff0-b445-6d79e5a91ffe" Title="SitemapAspNet.Attributes" Url="html/7aa94db6-789a-d014-d330-96a8861294d5.htm">
-    <HelpTOCNode Id="25edb40a-09c0-4239-ac87-855d7b8083b0" Title="SitemapAttribute Class" Url="html/3124786c-d82c-d4b5-9608-54ae98ad6420.htm">
-      <HelpTOCNode Id="105228de-2172-4813-9d4a-cd2f7daf57ae" Title="SitemapAttribute Constructor " Url="html/3c07820a-3384-9aaf-764c-a20533774a11.htm">
+  <HelpTOCNode Id="0d566fd8-1ce8-4998-9f6b-ebdc76ccbdf3" Title="SitemapAspNet.Attributes" Url="html/7aa94db6-789a-d014-d330-96a8861294d5.htm">
+    <HelpTOCNode Id="0ff27410-ab39-44e0-98b5-ec9021787559" Title="SitemapAttribute Class" Url="html/3124786c-d82c-d4b5-9608-54ae98ad6420.htm">
+      <HelpTOCNode Id="4faf3317-1398-43b6-afe2-9c7c35270fb6" Title="SitemapAttribute Constructor " Url="html/3c07820a-3384-9aaf-764c-a20533774a11.htm">
         <HelpTOCNode Title="SitemapAttribute Constructor " Url="html/35e5db6b-3f31-570b-b7e2-8a4b950f36ee.htm" />
         <HelpTOCNode Title="SitemapAttribute Constructor (String)" Url="html/086b5549-3cf1-2999-1fce-60207470bd76.htm" />
         <HelpTOCNode Title="SitemapAttribute Constructor (String, SitemapAttribute.Frequence)" Url="html/4ec2582b-8feb-09e8-7c95-d65343c2c596.htm" />
         <HelpTOCNode Title="SitemapAttribute Constructor (String, SitemapAttribute.Frequence, Double)" Url="html/82fbfc90-98c6-0cc8-9862-37ae19046b0b.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Id="1e38236d-fdea-4d82-82ca-4e9adba4a355" Title="SitemapAttribute Fields" Url="html/f962e632-5d80-cefa-6e58-30fdb9a8dbe7.htm">
+        <HelpTOCNode Title="PriorityDefault Field" Url="html/a455345f-cfac-9217-a079-f699a55cde3b.htm" />
+      </HelpTOCNode>
       <HelpTOCNode Title="SitemapAttribute Methods" Url="html/6f3638dc-279a-0123-e6b8-aa6c50c70a7a.htm" />
-      <HelpTOCNode Id="0ffd05f4-6bc3-4eb6-97a9-c894726feb2d" Title="SitemapAttribute Properties" Url="html/cbeb0d00-405c-e4dc-c479-064adf235701.htm">
+      <HelpTOCNode Id="662b0f4f-df1c-4115-b569-2239b377c6de" Title="SitemapAttribute Properties" Url="html/cbeb0d00-405c-e4dc-c479-064adf235701.htm">
         <HelpTOCNode Title="Address Property " Url="html/7afe8d36-6b1f-bd44-6715-78c54b1909df.htm" />
         <HelpTOCNode Title="ChangeFrequently Property " Url="html/370237a2-0927-40d2-c0f0-0cddcbb74044.htm" />
         <HelpTOCNode Title="LastModification Property " Url="html/e92aaa5d-2644-3be0-f0bf-9c924808c29b.htm" />
@@ -19,39 +22,56 @@
     </HelpTOCNode>
     <HelpTOCNode Title="SitemapAttribute.Frequence Enumeration" Url="html/df721e1b-894e-d20d-9aac-4529d9812e30.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="bbefa363-22fd-4d2e-b5fe-a68e7c23ae41" Title="SitemapAspNet.Configurations" Url="html/337860f5-83e6-9846-832d-593fda11bf6c.htm">
-    <HelpTOCNode Id="5ebccef8-2aca-4077-b5d5-f2707c01fe42" Title="SitemapConfiguration Class" Url="html/430c61a2-acd0-0be4-4c60-506a917a608f.htm">
-      <HelpTOCNode Id="ce8834c4-eaa0-448a-b007-7df01e53d854" Title="SitemapConfiguration Methods" Url="html/1a3aeec0-beaf-2933-2bb7-5eedb05651d4.htm">
-        <HelpTOCNode Id="359372d1-212e-45fa-a844-a0ee537d8236" Title="Register Method " Url="html/cdd7b881-9297-e183-98f3-18a8ac1c9d4a.htm">
+  <HelpTOCNode Id="14a4ab96-a823-44de-ab56-f122cc0a0389" Title="SitemapAspNet.Builders" Url="html/27af4ab9-7bae-76f6-0e8a-f8a0b9721438.htm">
+    <HelpTOCNode Id="11d4a280-ffa1-48d1-8c1b-245465f00c15" Title="ISitemapBuilder Interface" Url="html/2679b6a3-127c-28e0-d265-76e27fc9611c.htm">
+      <HelpTOCNode Id="5b8e9806-b414-471a-a310-cfea3a76711c" Title="ISitemapBuilder Methods" Url="html/c81df312-d13a-e4f1-b401-a9f4713ff90b.htm">
+        <HelpTOCNode Title="CreateEntry Method " Url="html/b59ee55a-3458-a3b5-6ff7-8d260222e3b6.htm" />
+        <HelpTOCNode Id="80622f2f-5b91-4417-9211-30b8f6922fee" Title="Generate Method " Url="html/07bbe5cf-586a-9032-ec2b-174f9f2cba6b.htm">
+          <HelpTOCNode Title="Generate Method " Url="html/3cada048-6391-931e-654f-18db3f40bbfe.htm" />
+          <HelpTOCNode Title="Generate Method (Encoding)" Url="html/3997d64a-543d-ddcd-f605-67ec1268b259.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="22a617e3-270e-4186-89e4-d64abddc7ed8" Title="SitemapAspNet.Configurations" Url="html/337860f5-83e6-9846-832d-593fda11bf6c.htm">
+    <HelpTOCNode Id="c0ff6430-c2f6-4cce-9297-59bb380109bf" Title="SitemapConfiguration Class" Url="html/430c61a2-acd0-0be4-4c60-506a917a608f.htm">
+      <HelpTOCNode Id="afe70089-b415-42bb-8564-beff1cf8b8a3" Title="SitemapConfiguration Methods" Url="html/1a3aeec0-beaf-2933-2bb7-5eedb05651d4.htm">
+        <HelpTOCNode Id="fc854c5a-b2ec-446e-b9cf-591e7a45f749" Title="Register Method " Url="html/cdd7b881-9297-e183-98f3-18a8ac1c9d4a.htm">
           <HelpTOCNode Title="Register Method (RouteCollection)" Url="html/c0e4ecce-e2cf-2b32-94de-a2df9d5f3478.htm" />
           <HelpTOCNode Title="Register Method (RouteCollection, String)" Url="html/483e1f26-46f3-c575-b682-5799bbf259a6.htm" />
         </HelpTOCNode>
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="fb8c6b7b-3295-4fde-b4f2-27cf31c6070e" Title="SitemapAspNet.Controllers" Url="html/49171b11-d070-e8aa-fa48-089bab49a20f.htm">
-    <HelpTOCNode Id="161b3da8-bdc1-4ee6-bf83-42ce6fbc7cb7" Title="SitemapController Class" Url="html/e039b003-ef89-1a2c-4cd6-c882beddfe83.htm">
-      <HelpTOCNode Title="SitemapController Constructor " Url="html/8918a6a7-d564-f73f-e26f-e23a606c660f.htm" />
-      <HelpTOCNode Id="c03cb9fc-5aec-4d73-af38-be5210d8b4de" Title="SitemapController Methods" Url="html/79a6c47e-0b2a-3c4b-3f59-7b077cd45919.htm">
+  <HelpTOCNode Id="403e618d-d756-494d-9ac6-9a1c13848b6d" Title="SitemapAspNet.Controllers" Url="html/49171b11-d070-e8aa-fa48-089bab49a20f.htm">
+    <HelpTOCNode Id="3ab75367-73d9-4735-a8c2-4b13729e9dd4" Title="SitemapController Class" Url="html/e039b003-ef89-1a2c-4cd6-c882beddfe83.htm">
+      <HelpTOCNode Id="e156505b-3d7b-40fc-85b1-a0a743fcd89f" Title="SitemapController Constructor " Url="html/d21e4e0b-7e14-8809-bd13-8256c311963b.htm">
+        <HelpTOCNode Title="SitemapController Constructor " Url="html/8918a6a7-d564-f73f-e26f-e23a606c660f.htm" />
+        <HelpTOCNode Title="SitemapController Constructor (ISitemapBuilder)" Url="html/3d5f08e4-9adf-61c8-9f89-88e252c0a067.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="72634466-843a-4b5a-a97c-13e1ab1a24a8" Title="SitemapController Fields" Url="html/dfcb1d58-11f7-5745-c660-33195ab0dcf9.htm">
+        <HelpTOCNode Title="sitemapBuilder Field" Url="html/bede1e27-1a8f-f051-a1ac-e3354b8c0ee9.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3d0bc725-21fa-4046-8b5b-12c156434149" Title="SitemapController Methods" Url="html/79a6c47e-0b2a-3c4b-3f59-7b077cd45919.htm">
         <HelpTOCNode Title="Index Method " Url="html/6957b62c-183c-d450-7661-701cc1379853.htm" />
       </HelpTOCNode>
       <HelpTOCNode Title="SitemapController Properties" Url="html/7dee7aef-15fc-e60a-f4c4-78457680953b.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="83b45276-62ff-4688-a214-89b7d46f5632" Title="SitemapAspNet.Extensions" Url="html/76ad92fe-aa0b-34c4-6155-57e92d422471.htm">
-    <HelpTOCNode Id="0f61dd63-a5ac-466c-924b-2625fab7def1" Title="ICustomAttributeProviderExtensions Class" Url="html/cccf3e6c-9e88-a055-5b79-b15bf45afad2.htm">
-      <HelpTOCNode Id="8ee389dd-2ae8-4125-a698-0d23a9c31997" Title="ICustomAttributeProviderExtensions Methods" Url="html/c6c9a4f5-342a-b4e4-5b42-26f68521cfe9.htm">
+  <HelpTOCNode Id="4c0b55ae-ec29-4ec6-b04d-2be0254279eb" Title="SitemapAspNet.Extensions" Url="html/76ad92fe-aa0b-34c4-6155-57e92d422471.htm">
+    <HelpTOCNode Id="2f1e8c36-a2af-4a1c-9061-d1b6f79bd3dd" Title="ICustomAttributeProviderExtensions Class" Url="html/cccf3e6c-9e88-a055-5b79-b15bf45afad2.htm">
+      <HelpTOCNode Id="f5ffc24b-5753-494b-9bbb-31ce13568854" Title="ICustomAttributeProviderExtensions Methods" Url="html/c6c9a4f5-342a-b4e4-5b42-26f68521cfe9.htm">
         <HelpTOCNode Title="GetCustomAttributesByType(T) Method " Url="html/3a2aa14a-8171-53c6-df07-4f5d995d36ec.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="ea96417b-df9e-46aa-bd98-e90d1b407406" Title="UriExtensions Class" Url="html/5473e04d-2c50-70a4-0a2d-2387aca16db5.htm">
-      <HelpTOCNode Id="ac7159de-293c-4c2b-bbf6-fc4d643ceef0" Title="UriExtensions Methods" Url="html/39926dc0-a6e4-db06-7d2c-a169dc9711cf.htm">
+    <HelpTOCNode Id="6ed48766-1eb5-4b56-ac88-81109439e3e5" Title="UriExtensions Class" Url="html/5473e04d-2c50-70a4-0a2d-2387aca16db5.htm">
+      <HelpTOCNode Id="22c3cd6b-0f6a-4250-909f-752fbc76bc51" Title="UriExtensions Methods" Url="html/39926dc0-a6e4-db06-7d2c-a169dc9711cf.htm">
         <HelpTOCNode Title="GetHostNameWithProtocol Method " Url="html/2c6ed20c-5fa7-50cb-a90c-d2ad78c5f703.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="b66fd463-7a4d-4082-9dda-bfff66c2e07a" Title="XmlSerializerExtensions Class" Url="html/8c8af132-242b-87a6-df07-ed4b11f0c28e.htm">
-      <HelpTOCNode Id="23dd99f3-8edc-4c71-ad57-af58b8335d47" Title="XmlSerializerExtensions Methods" Url="html/5b891a25-b7c7-17d0-ca2c-0d6c6f3a0611.htm">
-        <HelpTOCNode Id="6ca19b77-754f-4c9d-b65d-bb5d71601369" Title="SerializeToString Method " Url="html/27649fec-27f7-d293-1500-b09311d9f638.htm">
+    <HelpTOCNode Id="b90a5a2a-3407-4225-b705-f6742b5c7a8b" Title="XmlSerializerExtensions Class" Url="html/8c8af132-242b-87a6-df07-ed4b11f0c28e.htm">
+      <HelpTOCNode Id="dd88b10c-2e2e-4513-8c76-500341e01264" Title="XmlSerializerExtensions Methods" Url="html/5b891a25-b7c7-17d0-ca2c-0d6c6f3a0611.htm">
+        <HelpTOCNode Id="a2b3f219-3bd9-475a-903a-c097ba1f8b06" Title="SerializeToString Method " Url="html/27649fec-27f7-d293-1500-b09311d9f638.htm">
           <HelpTOCNode Title="SerializeToString(T) Method (T)" Url="html/c3fff714-50a8-3dc8-8e55-96c9370c428f.htm" />
           <HelpTOCNode Title="SerializeToString(T) Method (T, Encoding)" Url="html/f37e2d3b-792a-313c-2ddf-38334324c2a7.htm" />
           <HelpTOCNode Title="SerializeToString(T) Method (T, Encoding, Boolean)" Url="html/cffc2a4f-204f-6fdd-d2b8-649429d0bfe4.htm" />
@@ -59,30 +79,30 @@
       </HelpTOCNode>
     </HelpTOCNode>
   </HelpTOCNode>
-  <HelpTOCNode Id="bf7f4b2f-eb37-4d74-bd00-f7547eedb53b" Title="SitemapAspNet.Models" Url="html/ce9080c8-23bd-a03d-782c-f9c4f5a52f18.htm">
-    <HelpTOCNode Id="1ff75e8e-f1ac-4798-89cc-2eb0a75e91aa" Title="EntryModel Class" Url="html/cb58ee9f-22c9-ad04-8c67-fe145eedbadb.htm">
+  <HelpTOCNode Id="348cd5f9-decf-4b8f-8d14-c21dda027699" Title="SitemapAspNet.Models" Url="html/ce9080c8-23bd-a03d-782c-f9c4f5a52f18.htm">
+    <HelpTOCNode Id="96e5079d-0ada-4e7a-959d-1201c08aca73" Title="EntryModel Class" Url="html/cb58ee9f-22c9-ad04-8c67-fe145eedbadb.htm">
       <HelpTOCNode Title="EntryModel Constructor " Url="html/af0fc8eb-ed7c-4e4b-c870-86d68d40aabd.htm" />
       <HelpTOCNode Title="EntryModel Methods" Url="html/86da5fd0-db05-500b-001e-16267b9f71f8.htm" />
-      <HelpTOCNode Id="38a33452-5674-400c-a24e-af20be260f70" Title="EntryModel Properties" Url="html/068de23b-6794-e086-e07a-eb8c21fb47d9.htm">
+      <HelpTOCNode Id="48350882-e37d-4982-9afc-279930bad4f0" Title="EntryModel Properties" Url="html/068de23b-6794-e086-e07a-eb8c21fb47d9.htm">
         <HelpTOCNode Title="Address Property " Url="html/a56a65df-f180-02fa-f61f-d7e43a6d1c8a.htm" />
         <HelpTOCNode Title="ChangeFrequently Property " Url="html/5d06dd26-8ac6-1d50-4d0b-da3180da1d08.htm" />
         <HelpTOCNode Title="LastModification Property " Url="html/f67f0509-bffc-9fc9-fc92-2c3587eefb1b.htm" />
         <HelpTOCNode Title="Priority Property " Url="html/e5d55c8b-113d-c924-1768-0e3c87e99fcb.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="3eb293bc-5212-44bb-a090-b3edc12ed552" Title="SitemapModel Class" Url="html/d4385d59-3e4a-9458-67dd-e81623dccee5.htm">
+    <HelpTOCNode Id="9440a272-9f40-46ae-8ef4-a3606ce42393" Title="SitemapModel Class" Url="html/d4385d59-3e4a-9458-67dd-e81623dccee5.htm">
       <HelpTOCNode Title="SitemapModel Constructor " Url="html/fde56c77-ec57-4f18-93e8-8d1a66671394.htm" />
       <HelpTOCNode Title="SitemapModel Methods" Url="html/4c2a4987-d61c-1dd5-976e-18206d026a51.htm" />
-      <HelpTOCNode Id="7ab6ffe7-610d-4a67-b4bc-0572f95af75c" Title="SitemapModel Properties" Url="html/5f7e1eee-4f51-7efb-2dcf-8f1a51b31a6a.htm">
+      <HelpTOCNode Id="e4fffca6-9ed5-4124-b537-98cb94d6d407" Title="SitemapModel Properties" Url="html/5f7e1eee-4f51-7efb-2dcf-8f1a51b31a6a.htm">
         <HelpTOCNode Title="ActionName Property " Url="html/f47870c8-df62-5e61-aa73-5ced66ca86a8.htm" />
         <HelpTOCNode Title="ControllerName Property " Url="html/b2c7e7a1-3ba2-25b2-b00d-86d8722964c5.htm" />
         <HelpTOCNode Title="Sitemap Property " Url="html/d5b8c523-41a4-c311-7d2f-006a4809c912.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="930590e5-3f17-40fa-9d35-f8acae0926c6" Title="UrlSetModel Class" Url="html/7d94af12-20d0-b8e4-6c07-ae637ed68353.htm">
+    <HelpTOCNode Id="14db9b71-e1e6-4e58-af57-f896d23347cc" Title="UrlSetModel Class" Url="html/7d94af12-20d0-b8e4-6c07-ae637ed68353.htm">
       <HelpTOCNode Title="UrlSetModel Constructor " Url="html/4e744661-fd1a-df44-1d6f-402d77e12707.htm" />
       <HelpTOCNode Title="UrlSetModel Methods" Url="html/04693506-e56f-5306-9e43-1d9cdf194ecb.htm" />
-      <HelpTOCNode Id="c248cca7-a6bd-455c-9c6d-1f5a1cd0f21b" Title="UrlSetModel Properties" Url="html/6c67d70c-afd7-7d6c-8f26-d951ca84f830.htm">
+      <HelpTOCNode Id="67212041-18e0-4848-9127-e3225d11ecf4" Title="UrlSetModel Properties" Url="html/6c67d70c-afd7-7d6c-8f26-d951ca84f830.htm">
         <HelpTOCNode Title="Url Property " Url="html/3578195d-ea06-ed1f-0c42-1503fde1c0ba.htm" />
       </HelpTOCNode>
     </HelpTOCNode>

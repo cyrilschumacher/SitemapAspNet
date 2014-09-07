@@ -11,6 +11,7 @@
     <HelpKINode Title="SitemapAttribute.ChangeFrequently Property " Url="html/370237a2-0927-40d2-c0f0-0cddcbb74044.htm" />
   </HelpKINode>
   <HelpKINode Title="ControllerName property" Url="html/b2c7e7a1-3ba2-25b2-b00d-86d8722964c5.htm" />
+  <HelpKINode Title="CreateEntry method" Url="html/b59ee55a-3458-a3b5-6ff7-8d260222e3b6.htm" />
   <HelpKINode Title="Daily enumeration member" Url="html/df721e1b-894e-d20d-9aac-4529d9812e30.htm" />
   <HelpKINode Title="EntryModel class">
     <HelpKINode Title="EntryModel Class" Url="html/cb58ee9f-22c9-ad04-8c67-fe145eedbadb.htm" />
@@ -24,6 +25,7 @@
   <HelpKINode Title="EntryModel.EntryModel constructor" Url="html/af0fc8eb-ed7c-4e4b-c870-86d68d40aabd.htm" />
   <HelpKINode Title="EntryModel.LastModification property" Url="html/f67f0509-bffc-9fc9-fc92-2c3587eefb1b.htm" />
   <HelpKINode Title="EntryModel.Priority property" Url="html/e5d55c8b-113d-c924-1768-0e3c87e99fcb.htm" />
+  <HelpKINode Title="Generate method" Url="html/07bbe5cf-586a-9032-ec2b-174f9f2cba6b.htm" />
   <HelpKINode Title="GetCustomAttributesByType(Of T) method" Url="html/3a2aa14a-8171-53c6-df07-4f5d995d36ec.htm" />
   <HelpKINode Title="GetCustomAttributesByType&lt;T&gt; method" Url="html/3a2aa14a-8171-53c6-df07-4f5d995d36ec.htm" />
   <HelpKINode Title="GetHostNameWithProtocol method" Url="html/2c6ed20c-5fa7-50cb-a90c-d2ad78c5f703.htm" />
@@ -36,6 +38,13 @@
   <HelpKINode Title="ICustomAttributeProviderExtensions.GetCustomAttributesByType(Of T) method" Url="html/3a2aa14a-8171-53c6-df07-4f5d995d36ec.htm" />
   <HelpKINode Title="ICustomAttributeProviderExtensions.GetCustomAttributesByType&lt;T&gt; method" Url="html/3a2aa14a-8171-53c6-df07-4f5d995d36ec.htm" />
   <HelpKINode Title="Index method" Url="html/6957b62c-183c-d450-7661-701cc1379853.htm" />
+  <HelpKINode Title="ISitemapBuilder interface">
+    <HelpKINode Title="ISitemapBuilder Interface" Url="html/2679b6a3-127c-28e0-d265-76e27fc9611c.htm" />
+    <HelpKINode Title="about ISitemapBuilder interface" Url="html/2679b6a3-127c-28e0-d265-76e27fc9611c.htm" />
+    <HelpKINode Title="methods" Url="html/c81df312-d13a-e4f1-b401-a9f4713ff90b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ISitemapBuilder.CreateEntry method" Url="html/b59ee55a-3458-a3b5-6ff7-8d260222e3b6.htm" />
+  <HelpKINode Title="ISitemapBuilder.Generate method" Url="html/07bbe5cf-586a-9032-ec2b-174f9f2cba6b.htm" />
   <HelpKINode Title="LastModification property">
     <HelpKINode Title="EntryModel.LastModification Property " Url="html/f67f0509-bffc-9fc9-fc92-2c3587eefb1b.htm" />
     <HelpKINode Title="SitemapAttribute.LastModification Property " Url="html/e92aaa5d-2644-3be0-f0bf-9c924808c29b.htm" />
@@ -46,12 +55,15 @@
     <HelpKINode Title="EntryModel.Priority Property " Url="html/e5d55c8b-113d-c924-1768-0e3c87e99fcb.htm" />
     <HelpKINode Title="SitemapAttribute.Priority Property " Url="html/fe36d6fe-7921-c618-9128-93e45fd71169.htm" />
   </HelpKINode>
+  <HelpKINode Title="PriorityDefault field" Url="html/a455345f-cfac-9217-a079-f699a55cde3b.htm" />
   <HelpKINode Title="Register method" Url="html/cdd7b881-9297-e183-98f3-18a8ac1c9d4a.htm" />
   <HelpKINode Title="SerializeToString method" Url="html/27649fec-27f7-d293-1500-b09311d9f638.htm" />
   <HelpKINode Title="Sitemap property" Url="html/d5b8c523-41a4-c311-7d2f-006a4809c912.htm" />
   <HelpKINode Title="SitemapAspNet.Attributes namespace" Url="html/7aa94db6-789a-d014-d330-96a8861294d5.htm" />
   <HelpKINode Title="SitemapAspNet.Attributes.SitemapAttribute class" Url="html/3124786c-d82c-d4b5-9608-54ae98ad6420.htm" />
   <HelpKINode Title="SitemapAspNet.Attributes.SitemapAttribute.Frequence enumeration" Url="html/df721e1b-894e-d20d-9aac-4529d9812e30.htm" />
+  <HelpKINode Title="SitemapAspNet.Builders namespace" Url="html/27af4ab9-7bae-76f6-0e8a-f8a0b9721438.htm" />
+  <HelpKINode Title="SitemapAspNet.Builders.ISitemapBuilder interface" Url="html/2679b6a3-127c-28e0-d265-76e27fc9611c.htm" />
   <HelpKINode Title="SitemapAspNet.Configurations namespace" Url="html/337860f5-83e6-9846-832d-593fda11bf6c.htm" />
   <HelpKINode Title="SitemapAspNet.Configurations.SitemapConfiguration class" Url="html/430c61a2-acd0-0be4-4c60-506a917a608f.htm" />
   <HelpKINode Title="SitemapAspNet.Controllers namespace" Url="html/49171b11-d070-e8aa-fa48-089bab49a20f.htm" />
@@ -68,6 +80,7 @@
     <HelpKINode Title="SitemapAttribute Class" Url="html/3124786c-d82c-d4b5-9608-54ae98ad6420.htm" />
     <HelpKINode Title="about SitemapAttribute class" Url="html/3124786c-d82c-d4b5-9608-54ae98ad6420.htm" />
     <HelpKINode Title="constructor" Url="html/3c07820a-3384-9aaf-764c-a20533774a11.htm" />
+    <HelpKINode Title="fields" Url="html/f962e632-5d80-cefa-6e58-30fdb9a8dbe7.htm" />
     <HelpKINode Title="methods" Url="html/6f3638dc-279a-0123-e6b8-aa6c50c70a7a.htm" />
     <HelpKINode Title="properties" Url="html/cbeb0d00-405c-e4dc-c479-064adf235701.htm" />
   </HelpKINode>
@@ -76,7 +89,9 @@
   <HelpKINode Title="SitemapAttribute.Frequence enumeration" Url="html/df721e1b-894e-d20d-9aac-4529d9812e30.htm" />
   <HelpKINode Title="SitemapAttribute.LastModification property" Url="html/e92aaa5d-2644-3be0-f0bf-9c924808c29b.htm" />
   <HelpKINode Title="SitemapAttribute.Priority property" Url="html/fe36d6fe-7921-c618-9128-93e45fd71169.htm" />
+  <HelpKINode Title="SitemapAttribute.PriorityDefault field" Url="html/a455345f-cfac-9217-a079-f699a55cde3b.htm" />
   <HelpKINode Title="SitemapAttribute.SitemapAttribute constructor" Url="html/3c07820a-3384-9aaf-764c-a20533774a11.htm" />
+  <HelpKINode Title="sitemapBuilder field" Url="html/bede1e27-1a8f-f051-a1ac-e3354b8c0ee9.htm" />
   <HelpKINode Title="SitemapConfiguration class">
     <HelpKINode Title="SitemapConfiguration Class" Url="html/430c61a2-acd0-0be4-4c60-506a917a608f.htm" />
     <HelpKINode Title="about SitemapConfiguration class" Url="html/430c61a2-acd0-0be4-4c60-506a917a608f.htm" />
@@ -86,12 +101,14 @@
   <HelpKINode Title="SitemapController class">
     <HelpKINode Title="SitemapController Class" Url="html/e039b003-ef89-1a2c-4cd6-c882beddfe83.htm" />
     <HelpKINode Title="about SitemapController class" Url="html/e039b003-ef89-1a2c-4cd6-c882beddfe83.htm" />
-    <HelpKINode Title="constructor" Url="html/8918a6a7-d564-f73f-e26f-e23a606c660f.htm" />
+    <HelpKINode Title="constructor" Url="html/d21e4e0b-7e14-8809-bd13-8256c311963b.htm" />
+    <HelpKINode Title="fields" Url="html/dfcb1d58-11f7-5745-c660-33195ab0dcf9.htm" />
     <HelpKINode Title="methods" Url="html/79a6c47e-0b2a-3c4b-3f59-7b077cd45919.htm" />
     <HelpKINode Title="properties" Url="html/7dee7aef-15fc-e60a-f4c4-78457680953b.htm" />
   </HelpKINode>
   <HelpKINode Title="SitemapController.Index method" Url="html/6957b62c-183c-d450-7661-701cc1379853.htm" />
-  <HelpKINode Title="SitemapController.SitemapController constructor" Url="html/8918a6a7-d564-f73f-e26f-e23a606c660f.htm" />
+  <HelpKINode Title="SitemapController.sitemapBuilder field" Url="html/bede1e27-1a8f-f051-a1ac-e3354b8c0ee9.htm" />
+  <HelpKINode Title="SitemapController.SitemapController constructor" Url="html/d21e4e0b-7e14-8809-bd13-8256c311963b.htm" />
   <HelpKINode Title="SitemapModel class">
     <HelpKINode Title="SitemapModel Class" Url="html/d4385d59-3e4a-9458-67dd-e81623dccee5.htm" />
     <HelpKINode Title="about SitemapModel class" Url="html/d4385d59-3e4a-9458-67dd-e81623dccee5.htm" />
