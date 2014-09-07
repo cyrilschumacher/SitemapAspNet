@@ -5,6 +5,7 @@ namespace SitemapAspNet.Models
 {
     /// <summary>
     ///     Entry URL.
+    ///     Encloses all information about a specific URL
     /// </summary>
     /// <author>Cyril Schumacher</author>
     /// <date>22/08/2014T20:17:04+01:00</date>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <metadata>
+	<metadata>
 	<id>SitemapAspNet</id>
 	<version>1.0.2</version>
 	<title>Sitemap for ASP.NET</title>
@@ -10,7 +10,7 @@
 	<authors>Cyril Schumacher</authors>
 	<owners>Cyril Schumacher</owners>
 	<projectUrl>https://github.com/cyrilschumacher/SitemapAspNet</projectUrl>
-	<iconUrl></iconUrl>
+	<iconUrl>https://raw.githubusercontent.com/cyrilschumacher/SitemapAspNet/master/Additionals/Small-Icon.jpg</iconUrl>
 	<language>en-US</language>
-  </metadata>
+	</metadata>
 </package>

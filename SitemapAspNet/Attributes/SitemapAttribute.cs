@@ -6,25 +6,25 @@ using System.Web.Mvc;
 namespace SitemapAspNet.Attributes
 {
     /// <summary>
-    ///     Attribute for <see cref="ActionResult" /> method.
+    ///     Attribute for <see cref="ActionResult" /> method representing a Web resource (HTML files, JPEG files, etc.).
     /// </summary>
     /// <author>Cyril Schumacher</author>
     /// <date>15/02/2014T18:18:16+01:00</date>
     /// <copyright file="/Attributes/SitemapAttribute.cs">
     ///     The MIT License (MIT)
-    /// 
+    ///
     ///     Copyright (c) 2014, SitemapAspNet by Cyril Schumacher
-    /// 
+    ///
     ///     Permission is hereby granted, free of charge, to any person obtaining a copy
     ///     of this software and associated documentation files (the "Software"), to deal
     ///     in the Software without restriction, including without limitation the rights
     ///     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
     ///     copies of the Software, and to permit persons to whom the Software is
     ///     furnished to do so, subject to the following conditions:
-    /// 
+    ///
     ///     The above copyright notice and this permission notice shall be included in
     ///     all copies or substantial portions of the Software.
-    /// 
+    ///
     ///     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
     ///     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
     ///     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -42,9 +42,8 @@ namespace SitemapAspNet.Attributes
 
         /// <summary>
         ///     Default priority of a page.
-        ///     Priorité par défaut d'une page.
         /// </summary>
-        private const double PriorityDefault = 0.5;
+        public const double PriorityDefault = 0.5;
 
         #endregion Constants.
 
@@ -73,13 +72,14 @@ namespace SitemapAspNet.Attributes
         ///     Get or set a URL entry.
         /// </summary>
         /// <value>URL entry.</value>
+        /// <remarks>This property is required and is used to resolve the URL.</remarks>
         public string Address { get; set; }
 
         /// <summary>
         ///     Get a frequency of the page.
         /// </summary>
         /// <value>Frequency.</value>
-        /// <seealso cref="Frequence" />
+        /// <seealso cref="Frequence">This property is optional and represents the rate of change of the page.</seealso>
         public string ChangeFrequently
         {
             get { return _changeFrequently; }
@@ -89,7 +89,7 @@ namespace SitemapAspNet.Attributes
         ///     Get a date of last modification file.
         /// </summary>
         /// <value>Date of last modification file.</value>
-        /// <remarks>The date must be in the format W3C: YYYY-MM-DDThh: mm: ss.sTZD.</remarks>
+        /// <remarks>This property is optional and the date must be in the format W3C: YYYY-MM-DDThh:mmTZD.</remarks>
         public string LastModification
         {
             get { return _lastModification; }
@@ -99,7 +99,7 @@ namespace SitemapAspNet.Attributes
         ///     Get a priority of URL entry.
         /// </summary>
         /// <value>Priority of URL entry.</value>
-        /// <remarks>The priority must be represented by float number between 0.0 and 1.0.</remarks>
+        /// <remarks>The property is optional and must be represented by float number between 0.0 and 1.0.</remarks>
         public string Priority
         {
             get { return _priority; }
@@ -107,11 +107,12 @@ namespace SitemapAspNet.Attributes
 
         #endregion Properties.
 
-        #region Constructeur.
+        #region Constructor.
 
         /// <summary>
         ///     Constructor.
         /// </summary>
+        /// <seealso cref="SitemapAttribute(string, Frequence, double)"/>
         public SitemapAttribute()
             : this(null, Frequence.Never, PriorityDefault)
         {
@@ -121,6 +122,7 @@ namespace SitemapAspNet.Attributes
         ///     Constructor.
         /// </summary>
         /// <param name="lastModification">Date of last modification file.</param>
+        /// <seealso cref="SitemapAttribute(string, Frequence, double)"/>
         public SitemapAttribute(string lastModification)
             : this(lastModification, Frequence.Never, PriorityDefault)
         {
@@ -131,6 +133,7 @@ namespace SitemapAspNet.Attributes
         /// </summary>
         /// <param name="lastModification">Date of last modification file.</param>
         /// <param name="changeFrequently">Frequency of the page.</param>
+        /// <seealso cref="SitemapAttribute(string, Frequence, double)"/>
         public SitemapAttribute(string lastModification, Frequence changeFrequently)
             : this(lastModification, changeFrequently, PriorityDefault)
         {
@@ -142,7 +145,11 @@ namespace SitemapAspNet.Attributes
         /// <param name="lastModification">Optional. Date of last modification file.</param>
         /// <param name="changeFrequently">Optional. Frequency of the page.</param>
         /// <param name="priority">Optional. Priority of URL entry.</param>
-        /// <exception cref="ArgumentOutOfRangeException"></exception>
+        /// <exception cref="ArgumentException">Throw if <paramref name="lastModification" /> isn't in W3C format.</exception>
+        /// <exception cref="ArgumentOutOfRangeException">
+        ///     Throw if <paramref name="priority" /> has a value less than 0.0 or
+        ///     greater than 1.0.
+        /// </exception>
         [SuppressMessage("Microsoft.Globalization", "CA1308:NormalizeStringsToUppercase")]
         public SitemapAttribute(string lastModification, Frequence changeFrequently, double priority)
         {
@@ -182,12 +189,12 @@ namespace SitemapAspNet.Attributes
             _changeFrequently = changeFrequently;
         }
 
-        #endregion Constructeur.
+        #endregion Constructor.
 
-        #region Énumérations.
+        #region Enumerations.
 
         /// <summary>
-        ///     Fréquence probable de modification de la page.
+        ///     Frequency of the page.
         /// </summary>
         [SuppressMessage("Microsoft.Naming", "CA1704:IdentifiersShouldBeSpelledCorrectly", MessageId = "Frequence")]
         public enum Frequence
@@ -195,6 +202,7 @@ namespace SitemapAspNet.Attributes
             /// <summary>
             ///     Always.
             /// </summary>
+            /// <remarks>Use for pages that change every time they are accessed.</remarks>
             Always,
 
             /// <summary>
@@ -225,12 +233,13 @@ namespace SitemapAspNet.Attributes
             /// <summary>
             ///     Never.
             /// </summary>
+            /// <remarks>Use this value for archived URLs.</remarks>
             Never
         }
 
-        #endregion Énumérations.
+        #endregion Enumerations.
 
-        #region Méthodes.
+        #region Methods.
 
         /// <summary>
         ///     Determines if the date is W3C format.
@@ -239,7 +248,8 @@ namespace SitemapAspNet.Attributes
         /// <returns>True if the date is valid, False else.</returns>
         private static bool _IsValidDate(string lastModification)
         {
-            var supportedFormats = new[] { "yyyy-MM-dd", "YYYY-MM-DDThh:mmTZD", "YYYY-MM-DDThh:mm:ssTZD", "YYYY-MM-DDThh:mm:ss.sTZD" };
+            var supportedFormats = new[]
+            {"yyyy-MM-dd", "YYYY-MM-DDThh:mmTZD", "YYYY-MM-DDThh:mm:ssTZD", "YYYY-MM-DDThh:mm:ss.sTZD"};
 
             DateTime result;
             return DateTime.TryParseExact(lastModification, supportedFormats, CultureInfo.InvariantCulture,
@@ -257,6 +267,6 @@ namespace SitemapAspNet.Attributes
             return (0.0 < priority) && (priority < 1.0);
         }
 
-        #endregion Méthodes.
+        #endregion Methods.
     }
 }

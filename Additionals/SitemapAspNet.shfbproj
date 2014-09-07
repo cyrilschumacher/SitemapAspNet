@@ -25,8 +25,20 @@
     <CppCommentsFixup>False</CppCommentsFixup>
     <CleanIntermediates>True</CleanIntermediates>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.dll" />
-<DocumentationSource sourceFile="..\Documents\Visual Studio 2013\Projects\SitemapAspNet\SitemapAspNet\bin\Release\SitemapAspNet.XML" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\SitemapAspNet\bin\Release\SitemapAspNet.dll" />
+<DocumentationSource sourceFile="..\SitemapAspNet\bin\Release\SitemapAspNet.xml" /></DocumentationSources>
+    <MissingTags>None</MissingTags>
+    <VisibleItems>Attributes, ExplicitInterfaceImplementations, InheritedMembers, InheritedFrameworkMembers, Protected, SealedProtected, ProtectedInternalAsProtected</VisibleItems>
+    <TransformComponentArguments>
+      <Argument Key="logoFile" Value="" xmlns="" />
+      <Argument Key="logoHeight" Value="" xmlns="" />
+      <Argument Key="logoWidth" Value="" xmlns="" />
+      <Argument Key="logoAltText" Value="Sitemap for ASP.NET MVC" xmlns="" />
+      <Argument Key="logoPlacement" Value="left" xmlns="" />
+      <Argument Key="logoAlignment" Value="left" xmlns="" />
+      <Argument Key="maxVersionParts" Value="" xmlns="" />
+      <Argument Key="defaultLanguage" Value="en-US" xmlns="" />
+    </TransformComponentArguments>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
