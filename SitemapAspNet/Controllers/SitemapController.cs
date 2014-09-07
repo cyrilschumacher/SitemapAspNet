@@ -14,19 +14,19 @@ namespace SitemapAspNet.Controllers
     /// <date>08/08/2014T21:17:52+01:00</date>
     /// <copyright file="/Controllers/SitemapController.cs">
     ///     The MIT License (MIT)
-    /// 
+    ///
     ///     Copyright (c) 2014, SitemapAspNet by Cyril Schumacher
-    /// 
+    ///
     ///     Permission is hereby granted, free of charge, to any person obtaining a copy
     ///     of this software and associated documentation files (the "Software"), to deal
     ///     in the Software without restriction, including without limitation the rights
     ///     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
     ///     copies of the Software, and to permit persons to whom the Software is
     ///     furnished to do so, subject to the following conditions:
-    /// 
+    ///
     ///     The above copyright notice and this permission notice shall be included in
     ///     all copies or substantial portions of the Software.
-    /// 
+    ///
     ///     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
     ///     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
     ///     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -44,7 +44,7 @@ namespace SitemapAspNet.Controllers
         /// <summary>
         ///     Sitemap builder.
         /// </summary>
-        private readonly ISitemapBuilder _sitemapBuilder;
+        protected readonly ISitemapBuilder sitemapBuilder;
 
         #endregion Fields.
 
@@ -53,7 +53,7 @@ namespace SitemapAspNet.Controllers
         /// <summary>
         ///     Constructor.
         /// </summary>
-        /// <seealso cref="SitemapController(ISitemapBuilder)"/>
+        /// <seealso cref="SitemapController(ISitemapBuilder)" />
         public SitemapController()
             : this(new XmlSitemapBuilder())
         {
@@ -62,16 +62,16 @@ namespace SitemapAspNet.Controllers
         /// <summary>
         ///     Constructor.
         /// </summary>
-        /// <param name="sitemapBuilder">Sitemap builder.</param>
-        /// <exception cref="ArgumentNullException">Throw if <paramref name="sitemapBuilder" /> is null.</exception>
-        public SitemapController(ISitemapBuilder sitemapBuilder)
+        /// <param name="builder">Sitemap builder.</param>
+        /// <exception cref="ArgumentNullException">Throw if <paramref name="builder" /> is null.</exception>
+        public SitemapController(ISitemapBuilder builder)
         {
-            if (sitemapBuilder == null)
+            if (builder == null)
             {
-                throw new ArgumentNullException("sitemapBuilder", "The parameter is null.");
+                throw new ArgumentNullException("builder", "Value cannot be null.");
             }
 
-            _sitemapBuilder = sitemapBuilder;
+            sitemapBuilder = builder;
         }
 
         #endregion Constructor.
@@ -96,7 +96,7 @@ namespace SitemapAspNet.Controllers
         /// <returns>XML content.</returns>
         private ContentResult _GenerateSitemap(SitemapService service)
         {
-            return service.Generate(_sitemapBuilder, Request.RequestContext.HttpContext.Request.Url.GetHostNameWithProtocol());
+            return service.Generate(sitemapBuilder, Request.Url.GetHostNameWithProtocol());
         }
 
         #endregion Privates.

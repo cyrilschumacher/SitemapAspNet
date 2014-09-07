@@ -54,6 +54,11 @@ namespace SitemapAspNet
         #region Fields.
 
         /// <summary>
+        ///     Controller prefix.
+        /// </summary>
+        private readonly string _controllerPrefix;
+
+        /// <summary>
         ///     HTTP request informations.
         /// </summary>
         private readonly RequestContext _requestContext;
@@ -62,11 +67,6 @@ namespace SitemapAspNet
         ///     A collection of routes for the application.
         /// </summary>
         private readonly RouteCollection _routes;
-
-        /// <summary>
-        ///     Controller prefix.
-        /// </summary>
-        private string _controllerPrefix;
 
         #endregion Fields.
 
@@ -77,19 +77,37 @@ namespace SitemapAspNet
         /// </summary>
         /// <param name="requestContext">HTTP request informations.</param>
         /// <param name="routes">A collection of routes for the application.</param>
-        /// <exception cref="ArgumentNullException">Throw if <paramref name="requestContext" /> is null.</exception>
-        /// <exception cref="ArgumentNullException">Throw if <paramref name="routes" /> is null.</exception>
+        /// <exception cref="ArgumentNullException">
+        ///     Throw if <paramref name="requestContext" /> or <paramref name="routes" /> are
+        ///     null.
+        /// </exception>
         public SitemapService(RequestContext requestContext, RouteCollection routes)
+            : this(requestContext, routes, ControllerPrefix)
+        {
+        }
+
+        /// <summary>
+        ///     Constructor.
+        /// </summary>
+        /// <param name="requestContext">HTTP request informations.</param>
+        /// <param name="routes">A collection of routes for the application.</param>
+        /// <param name="controllerPrefix">Controller prefix.</param>
+        /// <exception cref="ArgumentNullException">
+        ///     Throw if <paramref name="requestContext" /> or <paramref name="routes" /> are
+        ///     null.
+        /// </exception>
+        public SitemapService(RequestContext requestContext, RouteCollection routes, string controllerPrefix)
         {
             if (requestContext == null)
             {
-                throw new ArgumentNullException("requestContext", "The parameter is null.");
+                throw new ArgumentNullException("requestContext", "Value cannot be null.");
             }
             if (routes == null)
             {
-                throw new ArgumentNullException("routes", "The parameter is null.");
+                throw new ArgumentNullException("routes", "Value cannot be null.");
             }
 
+            _controllerPrefix = controllerPrefix;
             _requestContext = requestContext;
             _routes = routes;
         }
@@ -99,48 +117,24 @@ namespace SitemapAspNet
         #region Methods.
 
         /// <summary>
-        ///     Génére un plan de site selon des ensembles d'attribut <see cref="SitemapAttribute" />
+        ///     Generate a sitemap by attributes <seealso cref="SitemapAttribute" />.
         /// </summary>
-        /// <param name="builder">Monteur de plan de site.</param>
-        /// <param name="rootUri">Adresse Uri du serveur.</param>
-        /// <returns>Chaîne de caractère représentant un document XML valide.</returns>
-        /// <exception cref="ArgumentNullException">
-        ///     Se lève si <paramref name="builder" /> ou <paramref name="rootUri" /> a la
-        ///     valeur null.
-        /// </exception>
+        /// <param name="builder">Sitemap builder.</param>
+        /// <param name="rootUri">Uri address of server.</param>
+        /// <returns>Valid XML document.</returns>
+        /// <exception cref="ArgumentNullException">Throw if <paramref name="builder" /> or <paramref name="rootUri" /> are null.</exception>
         public ContentResult Generate(ISitemapBuilder builder, Uri rootUri)
-        {
-            return Generate(builder, rootUri, ControllerPrefix);
-        }
-
-        /// <summary>
-        ///     Génére un plan de site selon des ensembles d'attribut <see cref="SitemapAttribute" />
-        /// </summary>
-        /// <param name="builder">Monteur de plan de site.</param>
-        /// <param name="rootUri">Adresse Uri du serveur.</param>
-        /// <param name="controllerPrefix">Préfixe des contrôleurs.</param>
-        /// <returns>Chaîne de caractère représentant un document XML valide.</returns>
-        /// <exception cref="ArgumentNullException">
-        ///     Se lève si <paramref name="builder" /> ou <paramref name="rootUri" /> a la
-        ///     valeur null.
-        /// </exception>
-        public ContentResult Generate(ISitemapBuilder builder, Uri rootUri, string controllerPrefix)
         {
             if (builder == null)
             {
-                throw new ArgumentNullException("builder", "The parameter is null.");
+                throw new ArgumentNullException("builder", "Value cannot be null.");
             }
             if (rootUri == null)
             {
-                throw new ArgumentNullException("rootUri", "The parameter is null.");
+                throw new ArgumentNullException("rootUri", "Value cannot be null.");
             }
 
-            _controllerPrefix = controllerPrefix;
-            foreach (var page in _GetPages())
-            {
-                builder.CreateEntry(page, rootUri);
-            }
-
+            _CreateEntries(builder, _GetPages(), rootUri);
             return new ContentResult
             {
                 Content = builder.Generate(),
@@ -150,6 +144,20 @@ namespace SitemapAspNet
         }
 
         #region Privates.
+
+        /// <summary>
+        ///     Create a entries by pages.
+        /// </summary>
+        /// <param name="builder">Sitemap builder.</param>
+        /// <param name="pages">URL entry.</param>
+        /// <param name="rootUri">Uri address of server.</param>
+        private static void _CreateEntries(ISitemapBuilder builder, IEnumerable<SitemapAttribute> pages, Uri rootUri)
+        {
+            foreach (var page in pages)
+            {
+                builder.CreateEntry(page, rootUri);
+            }
+        }
 
         /// <summary>
         ///     Return page address.

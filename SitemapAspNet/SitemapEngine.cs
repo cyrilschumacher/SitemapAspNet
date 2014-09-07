@@ -15,19 +15,19 @@ namespace SitemapAspNet
     /// <date>15/08/2014T11:26:41+01:00</date>
     /// <copyright file="/SitemapEngine.cs">
     ///     The MIT License (MIT)
-    /// 
+    ///
     ///     Copyright (c) 2014, SitemapAspNet by Cyril Schumacher
-    /// 
+    ///
     ///     Permission is hereby granted, free of charge, to any person obtaining a copy
     ///     of this software and associated documentation files (the "Software"), to deal
     ///     in the Software without restriction, including without limitation the rights
     ///     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
     ///     copies of the Software, and to permit persons to whom the Software is
     ///     furnished to do so, subject to the following conditions:
-    /// 
+    ///
     ///     The above copyright notice and this permission notice shall be included in
     ///     all copies or substantial portions of the Software.
-    /// 
+    ///
     ///     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
     ///     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
     ///     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -38,39 +38,47 @@ namespace SitemapAspNet
     /// </copyright>
     internal sealed class SitemapEngine
     {
-        #region Membres.
+        #region Fields.
 
         /// <summary>
         ///     Controllers.
         /// </summary>
         private readonly IEnumerable<Type> _controllers;
 
-        #endregion Membres.
+        #endregion Fields.
 
-        #region Constructeur.
+        #region Constructor.
 
         /// <summary>
         ///     Constructor.
         /// </summary>
-        /// <param name="controllers">Contrôleurs.</param>
+        /// <param name="controllers">Controllers type.</param>
         public SitemapEngine(IEnumerable<Type> controllers)
         {
             _controllers = controllers;
         }
 
-        #endregion Constructeur.
+        #endregion Constructor.
 
-        #region Méthodes.
-
-        #region Privées.
+        #region Methods.
 
         /// <summary>
-        ///     Obtient les informations sur les pages suivants les contrôleurs existants.
+        ///     Return pages.
+        /// </summary>
+        /// <returns>Pages.</returns>
+        public IEnumerable<SitemapModel> GetPages()
+        {
+            return _GetSitemapAttributes(new List<SitemapModel>());
+        }
+
+        #region Privates.
+
+        /// <summary>
+        ///     Return pages informations following existing controller.
         /// </summary>
         /// <returns>Informations sur les pages.</returns>
         private IEnumerable<SitemapModel> _GetSitemapAttributes(IEnumerable<SitemapModel> controllers)
         {
-            // Obtient les informations sur les pages suivants les contrôleurs existants.
             return _controllers.Select(_GetControllersInformations).Aggregate(controllers, Enumerable.Concat);
         }
 
@@ -85,7 +93,7 @@ namespace SitemapAspNet
         {
             if ((methodInfo == null) || (methodInfo.ReflectedType == null))
             {
-                throw new ArgumentNullException("methodInfo", "The parameter is null.");
+                throw new ArgumentNullException("methodInfo", "Value cannot be null.");
             }
             if (methodInfo.ReflectedType == null)
             {
@@ -101,20 +109,20 @@ namespace SitemapAspNet
         }
 
         /// <summary>
-        ///     Retourne les pages dites "valides".
+        ///     Return valid pages.
         /// </summary>
         /// <param name="pages">Pages.</param>
-        /// <returns>Liste de <see cref="SitemapModel"/> valide.</returns>
+        /// <returns><see cref="SitemapModel"/> list valid.</returns>
         private static IEnumerable<SitemapModel> _GetValidPages(IEnumerable<SitemapModel> pages)
         {
             return from page in pages where (page.Sitemap != null) select page;
         }
 
         /// <summary>
-        ///     Retourne les informations sur les pages HTML.
+        ///     Return informations pages.
         /// </summary>
-        /// <param name="typeController">Type du contrôleur.</param>
-        /// <returns>Une liste des informations des pages.</returns>
+        /// <param name="typeController">Controller type.</param>
+        /// <returns>Pages informations list.</returns>
         private static IEnumerable<SitemapModel> _GetControllersInformations(Type typeController)
         {
             var attributes = from attribute in typeController.GetMethods()
@@ -124,17 +132,8 @@ namespace SitemapAspNet
             return _GetValidPages(attributes);
         }
 
-        #endregion Privées.
+        #endregion Privates.
 
-        /// <summary>
-        ///     Retourne les pages.
-        /// </summary>
-        /// <returns></returns>
-        public IEnumerable<SitemapModel> GetPages()
-        {
-            return _GetSitemapAttributes(new List<SitemapModel>());
-        }
-
-        #endregion Méthodes.
+        #endregion Methods.
     }
 }

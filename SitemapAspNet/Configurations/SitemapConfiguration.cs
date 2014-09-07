@@ -75,11 +75,11 @@ namespace SitemapAspNet.Configurations
         {
             if (routes == null)
             {
-                throw new ArgumentNullException("routes", "The parameter is null.");
+                throw new ArgumentNullException("routes", "Value cannot be null.");
             }
             if (string.IsNullOrEmpty(urlPattern))
             {
-                throw new ArgumentNullException("urlPattern", "The parameter is null or empty.");
+                throw new ArgumentNullException("urlPattern", "Value cannot be null.");
             }
 
             _Register(routes, RouteName, urlPattern, new { controller = "Sitemap" });
