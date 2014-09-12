@@ -6,8 +6,8 @@ using System.Runtime.InteropServices;
 // Conformité CLS.
 [assembly: CLSCompliant(true)]
 
-// Les informations générales relatives à un assembly dépendent de
-// l'ensemble d'attributs suivant.
+// General Information about an assembly is controlled of 
+// the following set of attributes.
 [assembly: AssemblyTitle("SitemapAspNet")]
 [assembly: AssemblyDescription("Library to generate a sitemap ASP.NET.")]
 #if DEBUG
@@ -18,18 +18,18 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("SitemapAspNet")]
 [assembly: AssemblyCopyright("")]
 
-// Visibilité de l'assembly depuis des composants COM.
+// Visibility assembly from COM components.
 [assembly: ComVisible(false)]
 
-// Le GUID suivant est pour l'ID de la typelib si ce projet est exposé à COM
+// The following GUID is for the ID of the typelib if this project is exposed to COM.
 [assembly: Guid("88f3e204-89d1-449d-a6b3-800b5c6c83fb")]
 
-// Les informations de version pour un assembly se composent des quatre valeurs suivantes :
-// Version principale, Version secondaire, Numéro de build, Révision
-[assembly: AssemblyVersion("1.2.*")]
-[assembly: AssemblyFileVersion("1.2.0.0")]
+// Version information for an assembly consists of the following four values : 
+// Major Version, Minor Version, Build Number, Revision
+[assembly: AssemblyVersion("1.2.1")]
+[assembly: AssemblyFileVersion("1.2.1.0")]
 
-// Suppression des messages de l'analyse Microsoft.
+// Suppress messages from the Microsoft analysis.
 [assembly: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "SitemapAspNet.Configurations")]
 [assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap", Scope = "namespace", Target = "SitemapAspNet.Configurations")]
 [assembly: SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap", Scope = "namespace", Target = "SitemapAspNet.Models")]
