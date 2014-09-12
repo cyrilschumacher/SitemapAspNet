@@ -122,7 +122,7 @@ namespace SitemapAspNet.Builders
         /// <param name="entry">Entry.</param>
         private void _AddEntry(EntryModel entry)
         {
-            if (_model.Url.Contains(entry))
+            if (!_model.Url.Contains(entry))
             {
                 _model.Url.Add(entry);
             }

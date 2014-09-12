@@ -264,7 +264,7 @@ namespace SitemapAspNet.Attributes
         /// <returns></returns>
         private static bool _IsValidPriority(double priority)
         {
-            return (0.0 < priority) && (priority < 1.0);
+            return (0.0 <= priority) && (priority <= 1.0);
         }
 
         #endregion Methods.
