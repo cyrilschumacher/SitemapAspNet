@@ -10,45 +10,20 @@ namespace SitemapAspNet.Controllers
     /// <summary>
     ///     Sitemap Controller.
     /// </summary>
-    /// <author>Cyril Schumacher</author>
-    /// <date>08/08/2014T21:17:52+01:00</date>
-    /// <copyright file="/Controllers/SitemapController.cs">
-    ///     The MIT License (MIT)
-    ///
-    ///     Copyright (c) 2014, SitemapAspNet by Cyril Schumacher
-    ///
-    ///     Permission is hereby granted, free of charge, to any person obtaining a copy
-    ///     of this software and associated documentation files (the "Software"), to deal
-    ///     in the Software without restriction, including without limitation the rights
-    ///     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    ///     copies of the Software, and to permit persons to whom the Software is
-    ///     furnished to do so, subject to the following conditions:
-    ///
-    ///     The above copyright notice and this permission notice shall be included in
-    ///     all copies or substantial portions of the Software.
-    ///
-    ///     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    ///     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    ///     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    ///     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    ///     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    ///     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    ///     THE SOFTWARE.
-    /// </copyright>
     [CLSCompliant(true)]
     [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap")]
     public class SitemapController : Controller
     {
-        #region Fields.
+        #region Members section.
 
         /// <summary>
         ///     Sitemap builder.
         /// </summary>
-        protected readonly ISitemapBuilder sitemapBuilder;
+        private readonly ISitemapBuilder _sitemapBuilder;
 
-        #endregion Fields.
+        #endregion Members section.
 
-        #region Constructor.
+        #region Constructors section.
 
         /// <summary>
         ///     Constructor.
@@ -71,21 +46,12 @@ namespace SitemapAspNet.Controllers
                 throw new ArgumentNullException("builder", "Value cannot be null.");
             }
 
-            sitemapBuilder = builder;
+            _sitemapBuilder = builder;
         }
 
-        #endregion Constructor.
+        #endregion Constructors section.
 
-        #region Methods.
-
-        /// <summary>
-        ///     Return the sitemap.
-        /// </summary>
-        /// <returns>XML content.</returns>
-        public ActionResult Index()
-        {
-            return _GenerateSitemap(new SitemapService(Request.RequestContext, RouteTable.Routes));
-        }
+        #region Methods section.
 
         #region Privates.
 
@@ -96,11 +62,20 @@ namespace SitemapAspNet.Controllers
         /// <returns>XML content.</returns>
         private ContentResult _GenerateSitemap(SitemapService service)
         {
-            return service.Generate(sitemapBuilder, Request.Url.GetHostNameWithProtocol());
+            return service.Generate(_sitemapBuilder, Request.Url.GetHostNameWithProtocol());
         }
 
         #endregion Privates.
 
-        #endregion Methods.
+        /// <summary>
+        ///     Return the sitemap.
+        /// </summary>
+        /// <returns>XML content.</returns>
+        public ActionResult Index()
+        {
+            return _GenerateSitemap(new SitemapService(Request.RequestContext, RouteTable.Routes));
+        }
+
+        #endregion Methods section.
     }
 }

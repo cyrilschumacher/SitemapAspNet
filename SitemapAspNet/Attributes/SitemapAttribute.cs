@@ -8,46 +8,21 @@ namespace SitemapAspNet.Attributes
     /// <summary>
     ///     Attribute for <see cref="ActionResult" /> method representing a Web resource (HTML files, JPEG files, etc.).
     /// </summary>
-    /// <author>Cyril Schumacher</author>
-    /// <date>15/02/2014T18:18:16+01:00</date>
-    /// <copyright file="/Attributes/SitemapAttribute.cs">
-    ///     The MIT License (MIT)
-    ///
-    ///     Copyright (c) 2014, SitemapAspNet by Cyril Schumacher
-    ///
-    ///     Permission is hereby granted, free of charge, to any person obtaining a copy
-    ///     of this software and associated documentation files (the "Software"), to deal
-    ///     in the Software without restriction, including without limitation the rights
-    ///     to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    ///     copies of the Software, and to permit persons to whom the Software is
-    ///     furnished to do so, subject to the following conditions:
-    ///
-    ///     The above copyright notice and this permission notice shall be included in
-    ///     all copies or substantial portions of the Software.
-    ///
-    ///     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    ///     IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    ///     FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    ///     AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    ///     LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    ///     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    ///     THE SOFTWARE.
-    /// </copyright>
-    [CLSCompliant(true), AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
+    [CLSCompliant(true), AttributeUsage(AttributeTargets.Method, Inherited = false)]
     [SuppressMessage("Microsoft.Naming", "CA1702:CompoundWordsShouldBeCasedCorrectly", MessageId = "Sitemap"),
      SuppressMessage("Microsoft.Design", "CA1019:DefineAccessorsForAttributeArguments")]
     public sealed class SitemapAttribute : Attribute
     {
-        #region Constants.
+        #region Constants section.
 
         /// <summary>
         ///     Default priority of a page.
         /// </summary>
         public const double PriorityDefault = 0.5;
 
-        #endregion Constants.
+        #endregion Constants section.
 
-        #region Fields.
+        #region Members section.
 
         /// <summary>
         ///     Frequency of the page.
@@ -64,9 +39,9 @@ namespace SitemapAspNet.Attributes
         /// </summary>
         private readonly string _priority;
 
-        #endregion Fields.
+        #endregion Members section.
 
-        #region Properties.
+        #region Properties section.
 
         /// <summary>
         ///     Get or set a URL entry.
@@ -105,9 +80,9 @@ namespace SitemapAspNet.Attributes
             get { return _priority; }
         }
 
-        #endregion Properties.
+        #endregion Properties section.
 
-        #region Constructor.
+        #region Constructors section.
 
         /// <summary>
         ///     Constructor.
@@ -189,9 +164,9 @@ namespace SitemapAspNet.Attributes
             _changeFrequently = changeFrequently;
         }
 
-        #endregion Constructor.
+        #endregion Constructors section.
 
-        #region Enumerations.
+        #region Enumerations section.
 
         /// <summary>
         ///     Frequency of the page.
@@ -237,9 +212,9 @@ namespace SitemapAspNet.Attributes
             Never
         }
 
-        #endregion Enumerations.
+        #endregion Enumerations section.
 
-        #region Methods.
+        #region Methods section.
 
         /// <summary>
         ///     Determines if the date is W3C format.
@@ -267,6 +242,6 @@ namespace SitemapAspNet.Attributes
             return (0.0 <= priority) && (priority <= 1.0);
         }
 
-        #endregion Methods.
+        #endregion Methods section.
     }
 }

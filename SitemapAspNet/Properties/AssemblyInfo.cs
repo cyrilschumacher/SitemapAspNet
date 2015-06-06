@@ -16,7 +16,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("Release")]
 #endif
 [assembly: AssemblyProduct("SitemapAspNet")]
-[assembly: AssemblyCopyright("")]
+[assembly: AssemblyCopyright("Copyright (c) 2015 Cyril Schumacher.fr")]
 
 // Visibility assembly from COM components.
 [assembly: ComVisible(false)]
